@@ -20,6 +20,8 @@ Zasadniczo SDN jest architekturą szkieletową, która może być wykorzystywana
 Wiele osób z branży IT zauważyło, że wirtualizacja serwerów, w szczególności VMware ESX, przekształciła centrum danych w ciągu ostatniej dekady. Zdefiniowana programowo sieć (SDN) lub wirtualizacja sieci odnosi się do różnych technologii sieciowych o podobnych zasadach, które były stosowane do wirtualizacji serwerów, tj. Abstrakcji, enkapsulacji itp. - a także są teraz stosowane do innych warstw infrastruktury podobnie jak pamięć masowa i bezpieczeństwo. Pakiety sieciowe i przepływy nadal podlegają tym samym podstawowym siedmiowarstwowym modelom OSI, ale infrastruktura taka jak przełączniki i routery mogą być wirtualne, a obiekty sieciowe, takie jak adresy IP, MAC, porty i przepływy, są odłączane i niezależne od sieci fizycznej.
 Filozofia związana z SDN to umożliwienie połączenia świata aplikacji z światem sieciowym. Poprzez ustandaryzowaną architekturę. 
 
+![SDN](sdn.png)
+
 rozproszenie infrastruktury sieciowej, zarządzania i aplikacji
 
 ## Idealny przykład użycia SDN:
