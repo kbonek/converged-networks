@@ -1,7 +1,8 @@
-===Koncepcja SDN===
-==Ogólna definicja==
+#Koncepcja SDN
+#Ogólna definicja
 SDN (Software Defined Networking) - koncepcja architektury sieci polegająca na wydzieleniu z urządzenia sieciowego inteligentnego, tj. zarządczo-sterującego komponentu i pozostawienie dla tego urządzenia wyłącznie zadań polegających na przesyłaniu danych w pakietach pomiędzy portami.
-==Co SDN zmieni w sieciach==
+
+Co SDN zmieni w sieciach
 *Sieci przestaną być statyczne, możliwe będzie dynamiczna zmiana zachowania sieci
 *Dynamiczne policy
 *Szybkość dostarczania nowych aplikacji
