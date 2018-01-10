@@ -30,8 +30,8 @@ Tradycyjna infrastruktura sieciowa jest dość mocno skoncentrowana na rozwiąza
 
 Centrum danych zdefiniowane przez oprogramowanie może być rozumiane jako przeciwieństwo wcześniej opisanej tradycyjnej sieci. Jednym z kluczowych cech charakterystycznych takiego centrum danych jest to, że jego cała infrastruktura jest zwirtualizowana i dostarczana w postaci usługi. Ponadto zautomatyzowana kontrola aplikacji i usług w centrum danych jest zapewniona poprzez system zarządzania oparty na określonych politykach.
 
-##Podsumowanie
-Warto również nadmienić że SDN to nie OpenFlow, OpenFlow zajmuje sie tylko przełącznikami, SDN ma zajmować się, integrować przełączniki, routery, firewalle, aplikacje sieciowe. Postęp w obszarze wirtualizacji firmowych środowisk komputerowych spowodował, że na sieć spadła realizacja założeń firmowego cloud computingu. Dynamiczny charakter usług świadczonych w chmurze wymaga nowego poziomu elastyczności i skalowalności, który często wykracza poza możliwości dzisiejszych centrów przetwarzania danych. Zmiana zakładająca przejście do SDN obejmuje programowalność i elastyczność sieci, umożliwiając jej tym samym sprostanie potrzebom i wymaganiom współczesnego biznesu.
+## Podsumowanie
+Warto również nadmienić że SDN to nie OpenFlow, SDN ma integrować przełączniki, routery, firewalle oraz to czego nie spotkamy w OpenFlow - aplikacje sieciowe. Postęp w obszarze wirtualizacji firmowych środowisk komputerowych spowodował, że na sieć spadła realizacja założeń firmowego cloud computingu. Dynamiczny charakter usług świadczonych w chmurze wymaga nowego poziomu elastyczności i skalowalności, który często wykracza poza możliwości dzisiejszych centrów przetwarzania danych. Zmiana zakładająca przejście do SDN obejmuje programowalność i elastyczność sieci, umożliwiając jej tym samym sprostanie potrzebom i wymaganiom współczesnego biznesu.
 
 Źródła:
 * Wikipedia
