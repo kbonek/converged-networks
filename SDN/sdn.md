@@ -24,7 +24,7 @@ Filozofia związana z SDN to umożliwienie połączenia świata aplikacji z świ
 
 rozproszenie infrastruktury sieciowej, zarządzania i aplikacji
 
-## Idealny przykład użycia SDN:
+## Idealny przykład użycia SDN
 Aplikacja chcąca wykonać backup sprawdzi jak bardzo obciążona jest sieć i czy wykonanie backupu nie wpłynie negatywnie na stabilność sieci.  Czyli w skrócie bezpośredni dostęp aplikacji do informacji o sieci.
 
 ## SDN w Centrach danych
@@ -35,7 +35,7 @@ Centrum danych zdefiniowane przez oprogramowanie może być rozumiane jako przec
 ## Podsumowanie
 Warto również nadmienić że SDN to nie OpenFlow, SDN ma integrować przełączniki, routery, firewalle oraz to czego nie spotkamy w OpenFlow - aplikacje sieciowe. Postęp w obszarze wirtualizacji firmowych środowisk komputerowych spowodował, że na sieć spadła realizacja założeń firmowego cloud computingu. Dynamiczny charakter usług świadczonych w chmurze wymaga nowego poziomu elastyczności i skalowalności, który często wykracza poza możliwości dzisiejszych centrów przetwarzania danych. Zmiana zakładająca przejście do SDN obejmuje programowalność i elastyczność sieci, umożliwiając jej tym samym sprostanie potrzebom i wymaganiom współczesnego biznesu.
 
-Źródła:
+## Źródła
 * Wikipedia
 * Prezentacje dotyczące SDN z konferencji PLNOG 10 i 12
 * Prezentacje dotyczące wdrożenia Fortinet w sieci SDN
