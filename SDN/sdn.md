@@ -34,11 +34,7 @@ Centrum danych zdefiniowane przez oprogramowanie może być rozumiane jako przec
 Warto również nadmienić że SDN to nie OpenFlow, OpenFlow zajmuje sie tylko przełącznikami, SDN ma zajmować się, integrować przełączniki, routery, firewalle, aplikacje sieciowe. Postęp w obszarze wirtualizacji firmowych środowisk komputerowych spowodował, że na sieć spadła realizacja założeń firmowego cloud computingu. Dynamiczny charakter usług świadczonych w chmurze wymaga nowego poziomu elastyczności i skalowalności, który często wykracza poza możliwości dzisiejszych centrów przetwarzania danych. Zmiana zakładająca przejście do SDN obejmuje programowalność i elastyczność sieci, umożliwiając jej tym samym sprostanie potrzebom i wymaganiom współczesnego biznesu.
 
 Źródła:
-
-Wikipedia
-
-Prezentacje dotyczące SDN z konferencji PLNOG 10 i 12
-
-Prezentacje dotyczące wdrożenia Fortinet w sieci SDN
-
-https://itwiz.pl/sdn-oprogramowanie-na-pierwszym-planie/
+* Wikipedia
+* Prezentacje dotyczące SDN z konferencji PLNOG 10 i 12
+* Prezentacje dotyczące wdrożenia Fortinet w sieci SDN
+* https://itwiz.pl/sdn-oprogramowanie-na-pierwszym-planie/
