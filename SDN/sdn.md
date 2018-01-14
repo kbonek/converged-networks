@@ -39,6 +39,7 @@ Przedsiębiorstwa z entuzjazmem przyjęły zarówno publiczne, jak i prywatne us
 Obsługa dzisiejszych "Big data" lub mega-zestawów danych wymaga masowego równoległego przetwarzania na tysiącach serwerów, z których wszystkie wymagają bezpośrednich połączeń ze sobą. Wzrost liczby gigabajtów danych napędza stałe zapotrzebowanie na dodatkową przepustowość sieci w centrum danych. Operatorzy sieci hiperskalowych centrów danych stają przed zniechęcającym zadaniem, polegającym na skalowaniu sieci do wcześniej niewyobrażalnego rozmiaru, utrzymując łączność dowolną, bez zbędnego ryzyka.
 ## Elementy architektoniczne
 Ogólny przegląd architektury sieciowej definiowanej programowo
+![SDN](SDN-architecture-overview-transparent.png)
 Poniższa lista definiuje i wyjaśnia elementy architektoniczne:
 ### Aplikacja SDN
 Aplikacje SDN to programy, które jawnie, bezpośrednio i programowo komunikują swoje wymagania sieciowe i pożądane zachowanie sieciowe sterownikowi SDN za pośrednictwem northbound interface (NBI). Ponadto mogą mieć wgląd w abstrakcyjny widok sieci w celu ich wewnętrznego podejmowania decyzji. Aplikacja SDN składa się z jednej logiki aplikacji SDN i jednego lub więcej sterowników NBI. Aplikacje SDN mogą odsłonić kolejną warstwę abstrakcyjnej kontroli sieci, oferując w ten sposób jeden lub więcej NBI o wyższym poziomie za pośrednictwem odpowiednich agentów NBI.
