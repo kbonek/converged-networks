@@ -17,8 +17,9 @@ The Open Networking Foundation została założona w 2011 roku w celu promowania
 W 2014 r. Interop i Tech Field Day, SDN został zademonstrowany przez Avaya przy użyciu najkrótszego mostowania ścieżek - shortest path bridging (IEEE_802.1aq i OpenStack) jako zautomatyzowanego kampusu, rozszerzając automatyzację z centrum danych na urządzenie końcowe, usuwając ręczną konfigurację dostarczanych usług.
 ## Koncepcja
 Software-defined networking (SDN) to architektura, która ma być łatwa w zarządzaniu, ekonomiczna i dostosowywana, nadające się do szybkiego i dynamicznego charakteru dzisiejszych aplikacji. Architektura SDN rozłącza funkcje sterowania sieciowego i przekazywania danych, umożliwiając sterowanie siecią bezpośrednio z aplikacji do kontroli sieci.
+Protokół OpenFlow może być używany w technologiach SDN. 
 
-Protokół OpenFlow może być używany w technologiach SDN. Architektura SDN to:
+Architektura SDN to:
 * Bezpośrednio programowalne: Kontrola sieci jest bezpośrednio programowalna, ponieważ jest oddzielona od funkcji przekazywania.
 * Agile: abstrakcyjne sterowanie przesyłaniem pozwala administratorom dynamicznie dostosowywać przepływ ruchu w całej sieci do zmieniających się potrzeb.
 * Centralnie zarządzane: inteligencja sieci jest (logicznie) scentralizowana w opartych na oprogramowaniu kontrolerach SDN.
