@@ -2,7 +2,7 @@
 ## Definicja
 SDN (Software Defined Networking) - koncepcja architektury sieci polegająca na wydzieleniu z urządzenia sieciowego inteligentnego, tj. zarządczo-sterującego komponentu i pozostawienie dla tego urządzenia wyłącznie zadań polegających na przesyłaniu danych w pakietach pomiędzy portami.
 ## Historia
-Historia zasad SDN wiąże się z rozdzieleniem control i data plan. Pierwsze użycie takiej techniki zostało zastosowane w sieci telefonicznej aby uprościć konfigurację i zarządzanie.
+Historia zasad SDN wiąże się z rozdzieleniem control i data plane. Pierwsze użycie takiej techniki zostało zastosowane w sieci telefonicznej aby uprościć konfigurację i zarządzanie.
 Internet Engineering Task Force (IETF) zaczęła rozważać różne sposoby rozłączenia funkcji sterowania i przekazywania danych w proponowanym standardzie interfejsu opublikowanym w 2004 r., odpowiednio nazwanym “Forwarding and Control Element Separation” (ForCES).
 
 Te wczesne próby nie uzyskały zaakceptowane z dwóch powodów. Jednym z nich jest to, że w społeczności postrzegało oddzielenie control i data plane jako ryzykowne, zwłaszcza ze względu na możliwości awarii w control plane. Po drugie, producenci obawiali się, że stworzenie standardowych interfejsów programowania aplikacji (API) między control i data plane spowodowałoby zwiększenie konkurencji.
