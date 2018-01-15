@@ -20,11 +20,11 @@ Software-defined networking (SDN) to architektura, która ma być łatwa w zarz�
 Protokół OpenFlow może być używany w technologiach SDN. 
 
 Architektura SDN to:
-* Bezpośrednio programowalne: Kontrola sieci jest bezpośrednio programowalna, ponieważ jest oddzielona od funkcji przekazywania.
-* Agile: abstrakcyjne sterowanie przesyłaniem pozwala administratorom dynamicznie dostosowywać przepływ ruchu w całej sieci do zmieniających się potrzeb.
-* Centralnie zarządzane: inteligencja sieci jest (logicznie) scentralizowana w opartych na oprogramowaniu kontrolerach SDN.
-* Programowo skonfigurowane: SDN umożliwia administratorom sieci szybkie konfigurowanie, zarządzanie, zabezpieczanie i optymalizację zasobów sieciowych za pomocą dynamicznych, zautomatyzowanych programów SDN, które sami mogą napisać, ponieważ programy nie zależą od oprogramowania własnego.
-* Otwarty na standardy i neutralny dla dostawcy: Po wdrożeniu przez otwarte standardy, SDN upraszcza projektowanie i działanie sieci, ponieważ instrukcje są dostarczane przez kontrolery SDN, zamiast wielu urządzeń i protokołów specyficznych dla danego dostawcy.
+* **Bezpośrednio programowalne:** Kontrola sieci jest bezpośrednio programowalna, ponieważ jest oddzielona od funkcji przekazywania.
+* **Agile:** abstrakcyjne sterowanie przesyłaniem pozwala administratorom dynamicznie dostosowywać przepływ ruchu w całej sieci do zmieniających się potrzeb.
+* **Centralnie zarządzane:** inteligencja sieci jest (logicznie) scentralizowana w opartych na oprogramowaniu kontrolerach SDN.
+* **Programowo skonfigurowane:** SDN umożliwia administratorom sieci szybkie konfigurowanie, zarządzanie, zabezpieczanie i optymalizację zasobów sieciowych za pomocą dynamicznych, zautomatyzowanych programów SDN, które sami mogą napisać, ponieważ programy nie zależą od oprogramowania własnego.
+* **Otwarty na standardy i neutralny dla dostawcy:** Po wdrożeniu przez otwarte standardy, SDN upraszcza projektowanie i działanie sieci, ponieważ instrukcje są dostarczane przez kontrolery SDN, zamiast wielu urządzeń i protokołów specyficznych dla danego dostawcy.
 ## Potrzeba nowej architektury sieci
 Eksplozja urządzeń mobilnych i treści, wirtualizacja serwerów i nadejście usług w chmurze należą do trendów, które sprawiają, że przemysł sieciowy ponownie analizuje tradycyjne architektury sieciowe. Wiele konwencjonalnych sieci jest hierarchicznych, zbudowanych na poziomach przełączników Ethernetowych ułożonych w strukturę drzewa. Ten projekt miał sens, gdy dominowały komputery typu klient-serwer, ale taka statyczna architektura nie pasuje do dynamicznych potrzeb obliczeniowych i pamięciowych dzisiejszych korporacyjnych centrów danych, kampusów i środowisk operatorskich. Niektóre z kluczowych trendów obliczeniowych napędzających potrzebę nowego paradygmatu sieci obejmują:
 Zmienianie wzorców ruchu 
