@@ -27,6 +27,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### [DAS](das.md)
 
 ### [NAS](nas.md)
+(Łukasz Tol, Marek Ligenza)
 
 ### [SAN](SAN-2.md)
 
@@ -85,7 +86,8 @@ Jakub Bojanek
 (Dominik Kozok)
 
 ### OCFS
-### GPFS
+### [GPFS](GPFS.md)
+(Artur Dudka, Michał Polak)
 
 ### [System Lustre](SystemLustre.md)
 (Artur Jarzynka, Adam Pakosz, Przemysław Kasperkiewicz)
@@ -103,3 +105,6 @@ Jakub Bojanek
 (Damian Niedziela, Krzysztof Czech)
 
 ### Przełączniki programowalne
+
+### [Problematyka konwergencji](problematyka.md)
+(Kamil Pietrzak, Mateusz Duda, Sergiusz Gieszczyk)
