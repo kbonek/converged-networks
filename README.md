@@ -25,6 +25,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 ## Architektura storage w ujęciu ogólnym:
 ### [DAS](das.md)
+(Dawid Bielak, Miłosz Szymaszek, Dawid Jabłoński)
 
 ### [NAS](nas.md)
 (Łukasz Tol, Marek Ligenza)
