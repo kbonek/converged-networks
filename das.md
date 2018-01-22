@@ -1,5 +1,5 @@
 
-#DAS (Direct Attached Storage) 
+# DAS (Direct Attached Storage) 
 
 Architektura Storage – okazuje się, że to uniwersalne słowo, które praktycznie na stałe weszło do polskiego słownika informatyka, ma bardzo wiele znaczeń. Oznacza tyle, co gromadzenie i przechowywanie danych, zazwyczaj w dużej ilości. 
 Nieważne czy są to informacje dotyczące finansów, sprzedaży, marketingu czy korespondencji email. Stały dostęp do baz danych jest podstawowym warunkiem prowadzenia biznesu. W opracowaniu strategii przechowywania danych, jest wiele czynników do rozważenia, np.: wymagana pojemność nośników, dostępny budżet, kwalifikacje pracowników, wydajność urządzeń i możliwość ich ewentualnej rozbudowy. 
