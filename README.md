@@ -33,7 +33,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 ### SAN oraz [SAN-DG](SAN-DG/SAN-DG.md)
 
-## [Systemy RAID](RAID.md)
+## [Systemy RAID](SystemyRaid.md)
 (Mateusz Laber, Klaudia Domagała)
 
 ## Podstawowe protokoły:
