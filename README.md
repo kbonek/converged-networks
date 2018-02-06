@@ -97,7 +97,7 @@ Jakub Bojanek
 
 ## Sieci sterowane programowo
 
-### [Koncepcja SDN] (SDN/sdn.md)
+### [Koncepcja SDN](SDN/sdn.md)
 (Paweł Miczka)
 (Tomasz Chrabański, Marcin Karwot, Marta Olejnik)
 
