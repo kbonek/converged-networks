@@ -27,9 +27,10 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### [DAS](das.md)
 
 ### [NAS](nas.md)
-(Adrian Oponowicz, Mateusz Mazur)
+(Łukasz Tol, Marek Ligenza)
 
 ### [SAN](SAN-2.md)
+(Adrian Oponowicz, Mateusz Mazur)
 
 ### SAN oraz [SAN-DG](SAN-DG/SAN-DG.md)
 
@@ -86,7 +87,8 @@ Jakub Bojanek
 (Dominik Kozok)
 
 ### OCFS
-### GPFS
+### [GPFS](GPFS.md)
+(Artur Dudka, Michał Polak)
 
 ### [System Lustre](SystemLustre.md)
 (Artur Jarzynka, Adam Pakosz, Przemysław Kasperkiewicz)
