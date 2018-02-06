@@ -27,6 +27,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### [DAS](das.md)
 
 ### [NAS](nas.md)
+(Adrian Oponowicz, Mateusz Mazur)
 
 ### [SAN](SAN-2.md)
 
