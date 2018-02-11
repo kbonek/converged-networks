@@ -30,7 +30,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 (Łukasz Tol, Marek Ligenza)
 
 ### [SAN](SAN-2.md)
-(Adrian Oponowicz, Mateusz Mazur)
+(Adrian Oponowicz, Karolina Kobiela, Mariusz Kukliński)
 
 ### SAN oraz [SAN-DG](SAN-DG/SAN-DG.md)
 
