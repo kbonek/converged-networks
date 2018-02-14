@@ -26,3 +26,5 @@ Tak jest w przypadku tak zwanych usług zróżnicowanych (DiffServ) i usług zin
 * http://www.linfo.org/best_effort.html
 * https://es.wikipedia.org/wiki/Entrega_de_mejor_esfuerzo
 * http://www.inetdaemon.com/tutorials/internet/tcp/tcp_header.shtml
+* http://www.erg.abdn.ac.uk/users/gorry/course/inet-pages/udp.html
+* https://skminhaj.wordpress.com/2016/02/15/tcp-segment-vs-udp-datagram-header-format/
