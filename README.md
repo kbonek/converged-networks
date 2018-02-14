@@ -105,3 +105,6 @@ Jakub Bojanek
 (Damian Niedziela, Krzysztof Czech)
 
 ### Przełączniki programowalne
+
+### [Problematyka konwergencji](problematyka.md)
+(Kamil Pietrzak, Mateusz Duda, Sergiusz Gieszczyk)
