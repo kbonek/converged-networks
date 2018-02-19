@@ -64,4 +64,4 @@ Rozwiązanie SAN można stosować w przypadku, gdy chcemy zbudować infrastruktu
 SAN jest specyficzną siecią, zoptymalizowaną do pełnienia jednej funkcji. Ze względu na tą specjalizację ma bardzo prostą strukturę, dzięki czemu sieć łatwo można rozbudowywać o kolejne składniki: przestrzeń dyskową lub moc obliczeniową. SAN można podzielić na trzy warstwy:
 urządzenia pamięci masowej: dyski, streamery, macierze dyskowe, biblioteki optyczne, taśmowe Funkcją tych urządzeń jest dostarczenie odpowiednio dużej, skalowalnej przestrzeni dla danych;
 warstwa łącza, zapewniająca odpowiednią przepustowość. Warstwa ta powinna, ze względu na konieczną niezawodność, stosować połączenia redundantne, warstwa serwerowa, zapewniająca odpowiednią moc obliczeniową. 
-![SAN](333.png)
+![SAN](333.gif)
