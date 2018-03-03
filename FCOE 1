@@ -1,0 +1,26 @@
+Przyjrzyjmy się definicji Fibre Channel over Ethernet (FCoE), jego korzyściom oraz statusowi standardów.
+Fibre Channel over Ethernet (FCoE) to standard transportu, który przyjmuje ramki Fibre Channel (FC) i hermetyzuje je w rozszerzonej sieci Ethernet. FCoE zachowuje funkcje protokołu wyższego poziomu protokołu Fibre Channel, takie jak sprawdzanie integralności danych i kontrola przepływu, ale nie obsługuje kabli i interfejsów.
+Protokół ten pozwala na zwiększenie elastyczności rozwiązań SAN głównie dzięki łączeniu protokołu FC oraz 10-gigabitowego Ethernet.
+Dzięki tej muliipleksacji możliwe jest przesyłanie protokołów plikowych (CIFS, NFS) oraz blokowych (FC, iSCSI).
+ 
+NetApp jest pierwszym producentem, który oferuje systemy storage z natywnym wsparciem FCoE.
+Podłączenie do macierzy
+Należy mieć na uwadze, iż zastosowanie protokołu FCoE wymaga pośredniczącego switcha. A więc aby podłączyć macierz do serwera, należy zakupić switch FCoE, np. Brocade lub Cisco.
+ 
+Data ONTAP począwszy od wersji 8.0.1 posiada wsparcie dla protokołu FCoE. Do jego działania wymagana jest licencja na Fibre Channel (FCP).
+Fibre Channel jest zaprojektowany jako interfejs kanału. Oznacza to, że gwarantuje on bezstratne dostarczanie ramek z przewidywalnym opóźnieniem. FCoE wprowadza te cechy do (dotychczasowego) z natury mniej niezawodnego środowiska Ethernet.
+Nie działa on na zwykłym Ethernecie. Standard 10/100, 1 Gb lub 10 Gigabit Ethernet (10 GbE) nie jest technologią bezstratną i nie ma funkcjonalności - kontroli przepływu, gwarantowanej dostawy itp. - związanej z interfejsem kanału, takim jak równoległy SCSI, Fibre Channel, FICON lub ESCON.
+Zamiast tego, FCoE działa na wersjach Ethernetu, które zostały ulepszone, aby zapewnić niskie opóźnienia, jakość usług, gwarantowaną dostawę i inne funkcje tradycyjnie związane z interfejsami kanałów.
+Obecnie dostawcy mają różne nazwy dla swoich wersji tego rozszerzonego Ethernetu. Cisco Systems określa ją jako Data Center Ethernet (DCE), podczas gdy Brocade, IBM i wszyscy inni nazywają ją Converged Enhanced Ethernet (CEE).
+Z biegiem czasu oba obozy prawdopodobnie osiądą w jednym standardowym podejściu.
+KORZYŚCI:
+FCoE pozwala organizacjom korzystać z okablowania Ethernet dla sieci centrów danych i ruchu pamięci.
+Oprócz zmniejszenia ilości kabli liczba wymaganych kart interfejsu również może się zmniejszyć o połowę. Zamiast oddzielnych kart sieciowych Ethernet i adapterów magistrali hosta Fibre Channel (HBA) obie funkcje zostaną połączone na jednej konwergentnej karcie sieciowej (CNA). CNA zajmuje się obydwoma protokołami na jednej karcie, jednocześnie umożliwiając niezależne kontrolowanie domen pamięci i sieci.
+Ponadto FCoE prawdopodobnie zaoferuje znacznie wyższą przepustowość znacznie wcześniej niż Fibre Channel. Podczas gdy szybkość sieci Ethernet 40 Gb / s i 100 Gb / s jest potocznie mówiąc topowa, Fibre Channel obecnie osiąga przepustowość 8 Gbps, planując zwiększyć ją do 16 Gbps. 
+Racjonalizacja infrastruktury sieciowej, która jest dostarczana z FCoE, oznacza mniej urządzeń i okablowania, co przyniesie potencjał do obniżenia kosztów urządzeń, zasilania i chłodzenia.
+STANDARDY FCoE:
+W czerwcu 2009r. FCoE zostało zatwierdzone jako standard przez grupę techniczną T11 FC-BB-5, a w maju 2010 zostało zatwierdzone przez Międzynarodowy Komitet ds. Standardów Informacyjnych (INCITS) jako standard amerykańskiego standardu krajowego (ANSI).
+Centrum danych przełączyły się z Force10 i Dell PowerConnect z obsługą FCoE, a w czerwcu 2013 r. Dell Networking, który jest nową marką dla wszystkich usług sieciowych Dell, wprowadził serię S5000, która może być całkowicie natywnym przełącznikiem FCoE z opcją włączenia natywnego modułu kanału światłowodowego, umożliwiającego podłączenie S5000 bezpośrednio do środowiska FC SAN.
+
+ 
+Mateusz Woźniak, Michał Brzeziński 
