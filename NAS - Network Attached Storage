@@ -1,0 +1,69 @@
+Czym dokładnie jest NAS?
+NAS to urządzenie w którym są przechowane dane, które podłączamy do sieci. Przeważnie ma ono formę computer appliance, jest to urządzenie dedykowane, z hardwarem, firmwarem i konfiguracja przeznaczoną do przechowywania danych dla użytkowników sieci. Takie NASy porównaniu z SAN dostarcza nie tylko pamięci dla danych ale również system plików dla ich obsługi. SAN zostawia to po stronie klienta. NAS posiada sloty na kilka dysków twardych, które są łączone w systemie RAID w celu zapewnienia redundancji danych. Dostęp do danych zapisanych w NAS jest w pełni kontrolowany, klienci mogą uzyskać czasowy dostęp do określonych danych a pełny dostęp jest możliwy tylko z scentralizowanej lokacji w sieci przez upoważnionych użytkowników. NAS tak samo jak router posiada interfejs sieciowy, przez który możemy go skonfigurować. NAS oferuje różne przydatne aplikacje, np. służące do streamowania mediów itp. również dla pobierania danych do urządzenia.
+
+
+
+
+Formy NAS:
+•	Routery z wbudowanymi dyskami twardymi i oprogramowaniem serwera NAS. Najlepszymi produktami tego typu są AirpPort firmy Apple. Wbudowany dysk twardy jest tutaj routerem ze złączem USB 3.0 do którego można podłączyć dysk zewnętrzny.
+•	Na użytek domowy lub małego biura, kolejna opcja stworzenia NAS jest zagospodarowanie nieużywanego, podłączonego do sieci PC za pomocą systemu FreeNAS.
+•	Systemy FreeNAS i NAS4Free są również wykorzystywane w urządzeniach dedykowanych. FreeNAS oferuje interfejs webowy, protokoły udostępniania plików: SMB/CIFS (dla Windowsa), NFS (dla rodziny UNIX), AFP (dla oprogramowania Apple) oraz FTP. Inne możliwości to w pełni konfigurowalne snapshoty i ich replikacja.
+•	Dedykowane urzadzenie NAS
+
+Wszystkie rozwiązanie łączy tworzenie własnej, prywatnej chmury dla przechowywania danych.
+Skalowalność, dodając kolejne urządzenia, dostępna w sieci pamięć masowa
+graniczenia oczekiwania na odpowiedź na zapytania o dane w obrębie sieci.
+Łatwe tworzenie kopii zapasowych.
+
+
+
+
+
+Skad wzięło się NAS?
+NAS to protokół software/hardware obejmujący dedykowane serwery plikowe. Nazwa NAS to skrót od Network-attached Storage. Opracował go znany producent podzespołów sieciowych - 3Com. 3Com jest przejęty przez HP. Celem NAS było podłączenie zasobów masowych pamięci dyskowych bezpośrednio do sieci. Pod tym względem, można powiedzieć, 3Com wyprzedziło  firmy takie jak IBM czy też Novell & SUN. NASy zdobywaja sławę od połowy lat dziewięćdziesiątych.
+
+
+Dysk sieciowy NAS – cechy i funkcje 
+Interfejs – przewodowy czy bezprzewodowy?
+Większość osób wybierze przewodowy, bo taki właśnie interfejs posiada spora grupa dysków sieciowych. Te najzwyklejsze są przeznaczone do domowego użytku, posiadają zwykle jeden port Ethernet o przepustowości 100 Mbit(tańsze) lub 1 Gbit (nieco droższe). Kiedy zdecydujemy się na pierwszą opcję musimy wiedzieć, że transfer maksymalny do i z serwera NAS będzie co najmniej 8-krotnie niższy w przypadku zdecydowania się na drugi wariant i nie przekroczy realnie 12.5 MB/S. Jeśli będziemy wysyłać duże pliki może być to uporczywe.
+Przy wyborze gigabitowego łącza trzeba należy pamiętać aby wszystkie nasze urządzenia w sieci LAN łączyły się ze sobą z taką właśnie prędkością. Jeżeli któreś z urządzeń będzie miało przepustowość nie większą niż 100 Mbit trzeba się liczyć z tym, że moc naszego gigabitowego serwera nie zostanie w pełni wykorzystana. Zakup takiego właśnie urządzenia zalecany jest wszędzie tam gdzie będziemy mogli wykorzystać jego potencjał czyli w miejscu gdzie będzie mogło z niego korzystać kilka terminali czy komputerów.
+Nie zapominajmy również o tym, że infrastruktura sieciowa musi mieć odpowiednią wydajność/ przepustowość. Zapobiegnie ona zapychaniu się sieci. Kiedy naszym priorytetem jest maksymalna niezawodność i przepustowość warto zaopatrzyć się w co najmniej 2-gigabitowe interfejsy, które będą obsługiwały funkcję agregacji łączy czyli link aggregation i łącza awaryjne. Pierwsza wymieniona funkcja pozwala na zwiększenie prędkości wysyłu  danych, ale wymaga jednocześnie aby sieć obsługiwała standard IEEE 802.1AX.
+Złączone ze sobą interfejsy LAN muszą pracować w trybie full duplex z identycznymi prędkościami. Należy nie zapominać, że na drodze do zwiększenia wydajności transferów może stać nie tylko połączenie, lecz także wydajność zainstalowanych nośników. Kolejna funkcja zwiększa zaś niezawodność – kiedy nastąpi awaria jednego z łączy jego funkcję z automatu przejmuje następny, nadmiarowy interfejs i w ten właśnie sposób jest zachowana ciągłość działania. Warto też wspomineć o funkcji równoważenia obciążenia na łączach z angielskiego load balancing.
+Na naszym rynku nie brakuje również dysków sieciowych, które potrafią się komunikować drogą bezprzewodową . Część serwerów posiadają już wbudowane moduły WiFi/3G w standardzie, a do części trzeba dokupić dodatkowe karty rozszerzeń. Pewną rzeczą jest, żę rezygnacja z kabli niestety źle odbije się na naszych transferach. Nawet decydując się na na standard 802.11n trzeba się liczyć z tym, że nie osiągniecie stabilnego łącza nawet o przepustowośći 100 Mbit będzie w większości czasu niemożliwe.
+
+Rodzaje backupów i dysków NAS
+Dla wielu osób podstawowym zastosowaniem dysku sieciowego NAS jest przechowywanie kopii zapasowych. Jednak, nie wszystkie serwery NAS przeznaczone dla domowych użytkowników obsługują mechanizmy do tworzenia kopii zapasowych. Wtedy musimy sami zadbać o wykonanie właśnie takiego backupu najważniejszych plików. W tym celu możemy wykorzystać zaimplementowane mechanizmy w systemach operacyjnych lub zaopatrzyć się w zewnętrzne oprogramowanie co oczywiście wiąże się z dodatkowymi kosztami. Dlatego warto rozejrzeć się za egzemplarzami do których dodawany jest stosowny software.
+Software ten jest często dostosowany do serwera NAS, z którym jest sprzedawane i w znacznej części ułatwia tworzenie kopii zapasowych komputerów lokalnych i automatyzuje tą czynność. 
+Profitem też jest bezpieczeństwo danych. W praktyce istnieje możliwość przywrócenia nie tylko finalnego pliku, ale też określonej jego wersji przez to, że kopie mogą być wykonywane regularnie. 
+Poniżej krótkie omówienie rodzajów kopii bezpieczeństwa:
+•	kopia plikowa (ang. file backup) – obejmuje tylko wybrane pliki i katalogi. Robiona jest ona zazwyczaj nawet przez osoby leniwe, najczęściej chodzi o krytyczne dane, na utratę których nie można sobie pozwolić. Kopia ta jest szybka i odzyskanie jej także.
+•	kopia pełna (ang. full backup) – zebrane są w niej wszystkie zasoby znajdujące się na komputerze lub serwerze, w szczególnej mierze ukryte katalogi, które posiadają np. informacje o usługach jak Active Directory. Wykonywanie kopii jest bardzo czasochłonne, ale odzyskiwanie ich jest szybkie;
+•	kopia przyrostowa (ang. incremetal backup) – posiada ona wyłącznie te dane, które dodano lub zmodyfikowano od czasu wykonania ostatniej kopii zapasowej (przyrostowej lub pełnej). Odzyskanie danych wymaga odtworzenia ostatniego, pełnego backupu, a następnie wszystkich wykonanych od tamtej pory kopii przyrostowych. Ostatecznie backup zajmuje relatywnie mało czasu (w porównaniu do kopii pełnej) i mniej obciąża system, ale odzyskiwanie danych bywa czasochłonne;
+•	kopia różnicowa (ang. differential backup) – wykonywana jest kopia tylko tych danych, które zostały utworzone lub uległy zmianie od czasu wykonania ostatniej, pełnej kopii bezpieczeństwa (czyli obrazowane są zmiany, które zaszły w systemie od momentu, gdy wykonano pełny backup). Odzyskanie danych wymaga odtworzenia ostatniej, pełnej kopii zapasowej na następnie ostatniej kopii różnicowej. Ostatecznie wykonanie różnicowego backupu zajmuje mniej czasu niż w przypadku pełnego i mniej obciąża system, ale odzyskanie z niego danych jest mniej efektywne.
+Oczywiście nawet pełna kopia zapasowa nie rozwiązaniem wszystkich problemów. W przypadku plików, których zawartość dynamicznie zmienia się w czasie może dojść np. do naruszenia integralności danych. Proces kopiowania zajmuje trochę czasu, zatem może się zdarzyć, że w backupie znajdą się pliki pochodzące z różnych stadiów pracy (zwłaszcza, jeśli są powiązane zależnościami), np. sprzed wprowadzenia pewnych zmian i po nich.
+
+
+
+
+Porty i gniazda – rozbudowa i skalowalność w kontekście NAS-a
+Myśląc przyszłościowo nie można pominąć aspektu ewentualnej rozbudowy serwera NAS. Jest to wszakże komputer, który, jak już wiecie, jest w stanie pełnić wiele funkcji. Dlatego też nawet najprostsze dyski sieciowe mają wyprowadzone porty USB, a niekiedy także eSATA, które można wykorzystać np. do podłączenia drukarki w celu stworzenia serwera wydruku, czy urządzenia wielofunkcyjnego, które pozwoli także na zeskanowanie potrzebnych dokumentów. Oczywiście podłączyć można nie tylko sprzęt biurowy.
+Co bardziej zaawansowane konstrukcje można np. przekształcić, instalując odpowiedni moduł, w bezprzewodowe punkty dostępu (WiFi). Obsługiwane są też tunery cyfrowej telewizji naziemnej (DVB-T), karty sieciowe i przełączniki (switche). Część serwerów NAS (zwłaszcza tych klasy enterprise) można przekształcić w sieciowe rejestratory wideo (ang. NVR – Network Video Recorder), podłączając do nich kamerki IP (nawet kilkadziesiąt sztuk). Można zatem na ich bazie zbudować np. system monitoringu.
+Niezależnie od środowiska pracy (firma, dom) nie zawadzi wbudowany czytnik kart pamięci i obsługa zewnętrznych pamięci masowych via USB (najlepiej w wersji 3.0). Raz, że dzięki nim można łatwo rozszerzyć przestrzeń na dane, dwa, że nawet tańsze dyski sieciowe NAS pozwalają automatycznie wykonywać kopie zapasowe z i na podłączone nośniki. Zazwyczaj wystarczy wcisnąć stosowny, znajdujący się na obudowie przycisk, a serwer NAS zajmuje się resztą. Zazwyczaj obsługiwane są wszystkie popularne typy plików.
+Mówiąc popularne mam na myśli FAT, FAT32, NTFS i EXT3 oraz EXT4, choć często zdarza się, że wspierane są także EXT2, ReiserFS, ZFS i XFS oraz HFS+. Bywają jednak wyjątki, które obsługują np. tylko NTFS lub EXT3/4. Warto zatem zwrócić na to, czy upatrzony dysk sieciowy NAS wspiera interesujące nas systemy plików.
+Z punktu widzenia klienta biznesowego z całą pewnością przydatna będzie możliwość podłączenia stacji rozszerzających, posiadających dodatkowe zatoki dyskowe. W ten sposób można łatwo rozbudować niewystarczającą pamięć masową o kolejne terabajty. Dysk sieciowy musi jednak obsługiwać taką funkcję i mieć wyprowadzone porty eSATA lub specjalne gniazda rozszerzeń (tzw. Expansion slots).
+
+
+Dlaczego NAS i ile kosztuje?
+NASy mają zastosowanie wśród użytku domowego jak i małych i dużych firmach, ceny NASów dla użytkowników domowych i małych firm zaczynają się od 500PLN, a dochodzą nawet do 5-6 tysięcy PLN.
+Tym co rózni NASy od serwerów jest łatwiejsza i bardziej intuicyjna konfiguracja, oraz czynności administracyjne, szybszy dostęp do plików.
+
+
+
+
+Źródła
+•	http://www.seagate.com/pl/pl/tech-insights/what-is-nas-master-ti/
+•	https://gadzetomania.pl/3878
+•	http://www.howtogeek.com/208030/how-to-set-up-a-nas-network-attached-storage-drive/
+•	http://cctvinstitute.co.uk/network-attached-storage/ -
+
+
