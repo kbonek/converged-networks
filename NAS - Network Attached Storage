@@ -1,3 +1,5 @@
+Bartosz Dudek, Wojciech Ossowski, Norbert Malich
+
 Czym dokładnie jest NAS?
 NAS to urządzenie w którym są przechowane dane, które podłączamy do sieci. Przeważnie ma ono formę computer appliance, jest to urządzenie dedykowane, z hardwarem, firmwarem i konfiguracja przeznaczoną do przechowywania danych dla użytkowników sieci. Takie NASy porównaniu z SAN dostarcza nie tylko pamięci dla danych ale również system plików dla ich obsługi. SAN zostawia to po stronie klienta. NAS posiada sloty na kilka dysków twardych, które są łączone w systemie RAID w celu zapewnienia redundancji danych. Dostęp do danych zapisanych w NAS jest w pełni kontrolowany, klienci mogą uzyskać czasowy dostęp do określonych danych a pełny dostęp jest możliwy tylko z scentralizowanej lokacji w sieci przez upoważnionych użytkowników. NAS tak samo jak router posiada interfejs sieciowy, przez który możemy go skonfigurować. NAS oferuje różne przydatne aplikacje, np. służące do streamowania mediów itp. również dla pobierania danych do urządzenia.
 
