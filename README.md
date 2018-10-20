@@ -50,7 +50,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 ## Technologie konwergentnego data-center:
 
-### DCB(scsi/scsi.md)
+### DCB (scsi/scsi.md)
 (Daniel Karoń)
 
 ### [TRILL](TRILL.md)
@@ -65,7 +65,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### [Protokół RSVP](RSVP.md)
 
 ### Model Differentiated Services
-(Natalia Lasek)
+(Kinga Bik)
 
 ### [Przykłady DSCP](PrzykladyDSCP.md)
 
@@ -78,7 +78,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 (Mateusz Błachnio, Sławomir Tyliba)
 
 ### [Konfiguracja serwera i klienta iSCSI na platformie Linux](iSCSI_Linux.md)
-Marcin Maj
+(Marcin Maj)
 
 ### Konfiguracja serwera i klienta iSCSI na platformie Windows Server
 Jakub Bojanek
