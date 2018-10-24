@@ -74,6 +74,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### Systemy open-source do udostępniania zasobów iSCSI
 
 ### [Konfiguracja serwera i klienta iSCSI na platformie Linux](iSCSI_Linux.md)
+(Marcin Maj)
 
 ### Konfiguracja serwera i klienta iSCSI na platformie Windows Server
 
