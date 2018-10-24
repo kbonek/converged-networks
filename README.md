@@ -104,7 +104,7 @@ Jakub Bojanek
 (Tomasz Chrabański, Marcin Karwot, Marta Olejnik)
 
 ### [Protokół OpenFlow](Openflow.md)
-(Damian Niedziela, Krzysztof Czech)
+(Michał Koterwa)
 
 ### Przełączniki programowalne
 
