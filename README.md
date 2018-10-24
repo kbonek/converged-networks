@@ -21,22 +21,19 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 [Dokumentacja Markdown](https://guides.github.com/features/mastering-markdown/)
 
-## Spis treści
+# Spis treści
 
-## Architektura storage w ujęciu ogólnym:
+## Architektura storage w ujęciu ogólnym\
+
 ### [DAS](das.md)
-(Dawid Bielak, Miłosz Szymaszek, Dawid Jabłoński)
 
 ### [NAS](nas.md)
-(Łukasz Tol, Marek Ligenza)
 
 ### [SAN](SAN-2.md)
-(Adrian Oponowicz, Karolina Kobiela, Mariusz Kukliński)
 
 ### SAN oraz [SAN-DG](SAN-DG/SAN-DG.md)
 
 ## [Systemy RAID](SystemyRaid.md)
-(Mateusz Laber, Klaudia Domagała)
 
 ## Podstawowe protokoły:
 
@@ -48,7 +45,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 ### [FCoE](FCoE.md)
 
-## Technologie konwergentnego data-center:
+## Technologie konwergentnego data-center
 
 ### DCB (scsi/scsi.md)
 (Daniel Karoń)
@@ -69,44 +66,36 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 ### [Przykłady DSCP](PrzykladyDSCP.md)
 
-## Przydatne narzędzia:
+## Przydatne narzędzia
 
 ### Aplikacje do pomiarów wydajności magazynów dyskowych na przykładzie Bonnie++
 (Julia Zelenska)
 
 ### Systemy open-source do udostępniania zasobów iSCSI
-(Mateusz Błachnio, Sławomir Tyliba)
 
 ### [Konfiguracja serwera i klienta iSCSI na platformie Linux](iSCSI_Linux.md)
-(Marcin Maj)
 
 ### Konfiguracja serwera i klienta iSCSI na platformie Windows Server
-Jakub Bojanek
 
-## Rozproszone systemy plików:
+## Rozproszone systemy plików
+
 ### GFS - (Rozproszone systemy plików: GFS)
-(Dominik Kozok)
 
 ### OCFS
+
 ### [GPFS](GPFS.md)
-(Artur Dudka, Michał Polak)
 
 ### [System Lustre](SystemLustre.md)
-(Artur Jarzynka, Adam Pakosz, Przemysław Kasperkiewicz)
-
 
 ### [System Ceph](CEPH-DG/CEPH-DG.md) 
 
 ## Sieci sterowane programowo
 
 ### [Koncepcja SDN](SDN/sdn.md)
-(Paweł Miczka)
-(Tomasz Chrabański, Marcin Karwot, Marta Olejnik)
 
 ### [Protokół OpenFlow](Openflow.md)
-(Michał Koterwa)
 
 ### Przełączniki programowalne
 
 ### [Problematyka konwergencji](problematyka.md)
-(Kamil Pietrzak, Mateusz Duda, Sergiusz Gieszczyk)
+
