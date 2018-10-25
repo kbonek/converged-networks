@@ -95,6 +95,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### [Koncepcja SDN](SDN/sdn.md)
 
 ### [Protokół OpenFlow](Openflow.md)
+(Michał Koterwa)
 
 ### Przełączniki programowalne
 
