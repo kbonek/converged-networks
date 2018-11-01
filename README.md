@@ -60,7 +60,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### [Model Best Effort](Model%20Best%20Effort/Model%20best%20effort.md) 
 (Bacharz Dariusz, Gulczewska Natalia)
 
-### [Model Integrated Services](Model Integrated Services.md)
+### [Model Integrated Services](Model%20Integrated%20Services.md)
 (Oleksandr Sokoliuk)
 
 ### [Protokół RSVP](RSVP.md)
