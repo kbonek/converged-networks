@@ -61,6 +61,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 (Bacharz Dariusz, Gulczewska Natalia)
 
 ### [Model Integrated Services](Model Integrated Services.md)
+(Oleksandr Sokoliuk)
 
 ### [Protokół RSVP](RSVP.md)
 
