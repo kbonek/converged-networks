@@ -71,7 +71,7 @@ Prawdopodobieństwo odrzucenia pakietu | Klasa 1 | Klasa 2 | Klasa 3 | Klasa 4
 Niskie  | 001010 | 010010 | 011010 | 100010 
 Średnie  | 001100 | 010100 | 011100 | 100100 
 Wysokie  | 001110 | 010110 | 011110 | 100110 
-
+----
 ### Źródła <a name="zrodla"></a>
 * [Sposoby zapewnienia gwarantowanej
 jakości usług w sieciach IP](http://www.przegladtelekomunikacyjny.pl/archive/WWW/artrec/stankiewicz2%272002.pdf) R.Stankiewicz, A.Jajszczyk
