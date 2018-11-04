@@ -64,7 +64,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 
 ### [Protokół RSVP](RSVP.md)
 
-### Model Differentiated Services
+### [Model Differentiated Services](Model Differentiated Services.md)
 (Kinga Bik)
 
 ### [Przykłady DSCP](PrzykladyDSCP.md)
