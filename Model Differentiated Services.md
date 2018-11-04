@@ -55,3 +55,4 @@ Niskie  | 001010 | 010010 | 011010 | 100010
 Wysokie  | 001110 | 010110 | 011110 | 100110 
 
 
+![alt text](https://github.com/Bit-Kit/converged-networks/blob/master/IntServ/resv.png "Rys.2 Komunikat RESV")
