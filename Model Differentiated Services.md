@@ -11,8 +11,8 @@ Spis treści:
 
 
 ## Wstęp  <a name="wstep"></a>
-W sieci, w której wielu użytkowników rywalizuje o dostęp do pasma, zachodzi potrzeba priorytetyzacji pakietów w sieci.
-Co raz to nowsze usługi w sieciach potrzebują stałego i wysokiego poziomu jakości połączenia.
+W sieci, w której wiele aplikacji rywalizuje o dostęp do pasma, zachodzi potrzeba priorytetyzacji pakietów w sieci.
+Usługi potrzebują stałego i wysokiego poziomu jakości połączenia.
 Dotyczy to szczególnie usług działających w trybie czasu rzeczywistego, które są nieodporne na opóźnienia
 i wymagają stałej szerokości pasma. Takie wysokie wymagania doprowadziły do powstania mechanizmów, które będą zapewniały
 transmisję danych z zachowaniem pewnych gwarancji. Obecnie najpopularniejszą architekturą sieci, która pozwala na zapewnienie
