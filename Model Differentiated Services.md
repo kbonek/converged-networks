@@ -11,6 +11,9 @@ skalowalności  w porównaniu do modelu IntServ. Architektura DiffServ nie wymag
 Zapewnienie jakości usług polega na mechanizmie rozróżniania typu ruchu w sieci i odbywa się na poziomie klasy (grupy) połączeń,
 a nie na poziomie pojedynczego połączenia
 ### Archtektura DiffServ
+
+
+  ![alt text](https://github.com/kingaBik/converged-networks/blob/master/DiffService/architektura.png)
 * **Agent Pasma (Bandwidth Broker)-** zarządza zasobami sieci, odpowiada za funkcje związane z konfiguracją routerów brzegowych 
 oraz wykonywanie funkcji AC (Admision Control), czyli przyjmowanie albo odrzucanie nowych wywołań. 
 Funkcja AC zapobiega stanom przeciążenia sieci oraz jest niezbędna w sieciach IP oferujących ścisłe gwarancje QoS.
@@ -25,7 +28,7 @@ punktu kodowego DSCP (Differantied Service Code Point) w nagłówku pakietu. Pun
 i jest częścią jednobajtowego pola DS. W wersji 4 protokołu IP
 wykorzystuje się do tego bajt ToS (Type of Service), natomiast w wersji 6 protokołu IP jest to bajt Traffic Class.
 
-![alt text](https://github.com/kingaBik/converged-networks/blob/master/DiffService/DSCP.png)
+  ![alt text](https://github.com/kingaBik/converged-networks/blob/master/DiffService/DSCP.png)
 
 ***BA (Behaviour Aggregate)-*** zespół pakietów z tym samym DCSP, pakiety te są tak samo traktowane w ramach domeny.
 
@@ -56,6 +59,3 @@ Prawdopodobieństwo odrzucenia pakietu | Klasa 1 | Klasa 2 | Klasa 3 | Klasa 4
 Niskie  | 001010 | 010010 | 011010 | 100010 
 Średnie  | 001100 | 010100 | 011100 | 100100 
 Wysokie  | 001110 | 010110 | 011110 | 100110 
-
-
-![alt text](https://github.com/kingaBik/converged-networks/blob/master/DiffService/DSCP.png)
