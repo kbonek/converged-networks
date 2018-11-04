@@ -24,6 +24,9 @@ pakietu IP (np. adresu i numeru portu nadawcy czy identyfikatora protokołu tran
 punktu kodowego DSCP (Differantied Service Code Point) w nagłówku pakietu. Punkt kodowy ma wartość 6 bitów
 i jest częścią jednobajtowego pola DS. W wersji 4 protokołu IP
 wykorzystuje się do tego bajt ToS (Type of Service), natomiast w wersji 6 protokołu IP jest to bajt Traffic Class.
+
+![alt text](https://github.com/kingaBik/converged-networks/blob/master/DiffService/DSCP.png)
+
 ***BA (Behaviour Aggregate)-*** zespół pakietów z tym samym DCSP, pakiety te są tak samo traktowane w ramach domeny.
 
 **Oznaczanie pakietów w routerach brzegowych** polega na ustawieniu odpowiedniej wartości pola DSCP w nagłówku pakietu. 
@@ -55,4 +58,4 @@ Niskie  | 001010 | 010010 | 011010 | 100010
 Wysokie  | 001110 | 010110 | 011110 | 100110 
 
 
-![alt text](https://github.com/Bit-Kit/converged-networks/blob/master/IntServ/resv.png "Rys.2 Komunikat RESV")
+![alt text](https://github.com/kingaBik/converged-networks/blob/master/DiffService/DSCP.png)
