@@ -19,7 +19,7 @@ transmisję danych z zachowaniem pewnych gwarancji. Obecnie najpopularniejszą a
 ścisłych gwarancji QoS w sieciach IP jest architektura Diffserv.
 ### Model DiffServ <a name="model"></a>
 Jest to model oparty o architekturę usług zróżnicowanych, którego  głównym założeniem podczas tworzenia był wzrost 
-skalowalności  w porównaniu do modelu [IntServ](converged-networks/Model%20Integrated%20Services.md). Architektura DiffServ nie wymaga sygnalizowania dla zestawienia połączenia.
+skalowalności  w porównaniu do modelu [IntServ](Model%20Integrated%20Services.md). Architektura DiffServ nie wymaga sygnalizowania dla zestawienia połączenia.
 Zapewnienie jakości usług polega na mechanizmie rozróżniania typu ruchu w sieci i odbywa się na poziomie klasy (grupy) połączeń,
 a nie na poziomie pojedynczego połączenia.
 ### Archtektura DiffServ <a name="architektura"></a>
