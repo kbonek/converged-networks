@@ -21,7 +21,7 @@ transmisję danych z zachowaniem pewnych gwarancji. Obecnie najpopularniejszą a
 Jest to model oparty o architekturę usług zróżnicowanych, którego  głównym założeniem podczas tworzenia był wzrost 
 skalowalności  w porównaniu do modelu IntServ. Architektura DiffServ nie wymaga sygnalizowania dla zestawienia połączenia.
 Zapewnienie jakości usług polega na mechanizmie rozróżniania typu ruchu w sieci i odbywa się na poziomie klasy (grupy) połączeń,
-a nie na poziomie pojedynczego połączenia
+a nie na poziomie pojedynczego połączenia.
 ### Archtektura DiffServ <a name="architektura"></a>
 
 
@@ -31,7 +31,7 @@ oraz wykonywanie funkcji AC (Admision Control), czyli przyjmowanie albo odrzucan
 Funkcja AC zapobiega stanom przeciążenia sieci oraz jest niezbędna w sieciach IP oferujących ścisłe gwarancje QoS.
 * **Router brzegowy-** przydzielenie pakietu do klasy usług odbywa się w wejściowym ruterze brzegowym 
 w chwili wejścia pakietu do domeny DiffServ.
-* **Domena DiffServ-** zestaw ściśle związanych ze sobą węzłów. Domeny mogą ze sobą współpracować,
+* **Domena DiffServ-** zestaw ściśle związanych ze sobą węzłów(routerów). Domeny mogą ze sobą współpracować,
 ale są również od siebie niezależne. Zbiór współpracujących ze sobą domen nazywa się region.
 ### Klasyfikowanie i oznaczanie pakietów <a name="klasyfikacja"></a>
 **Klasyfikacja pakietów** jest przeprowadzana na podstawie wartości jednego lub wielu pól nagłówka 
