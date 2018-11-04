@@ -73,3 +73,8 @@ Niskie  | 001010 | 010010 | 011010 | 100010
 Wysokie  | 001110 | 010110 | 011110 | 100110 
 
 ### Źródła <a name="zrodla"></a>
+* [Sposoby zapewnienia gwarantowanej
+jakości usług w sieciach IP](http://www.przegladtelekomunikacyjny.pl/archive/WWW/artrec/stankiewicz2%272002.pdf) R.Stankiewicz, A.Jajszczyk
+* [Architektura DiffServ](http://aai.tele.pw.edu.pl/data/SWUS/swus_diffserv_n.pdf) Politechnika Warszawska
+* [Wprowadzenie do sieci z gwarancją obsługi](https://old.kt.agh.edu.pl/~jdomzal/QoS/lab_4/lab_diffserv.pdf) dr inż. Jerzy Domżał
+* [Mechanizmy QOS w kontekście interowania sieci IPV4 I IPV6](http://zeszyty-naukowe.wwsi.edu.pl/zeszyty/zeszyt4/Mechanizmy_QOS_W_Kontekscie_Integrowania_Sieci_IPV4_i_IPV6.pdf) Tomasz Malinowski
