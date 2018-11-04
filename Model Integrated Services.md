@@ -9,10 +9,10 @@ Spis treści:
 6. [Źródła](#zrodla)
 ---
 ### Wprowadzenie: <a name="wprowadzenie"></a>
-Znaczny wzrost sieci Internet bezpośrednio wpływa na znaczny wzrost ruchu sieciowego. Z pojawieniem takiego typu aplikacij 
-jak aplikacje internetowe, wideo w czasie rzeczywistym, telefonia IP i wiele innych, ruch sieciowy stałał się bardziej 
-obciążony. Standardowe protokoły stosu TCP/IP nie oferują gwarantowanej przepustowości lub minimalnego czasu opóżnienia 
-pakietów. Taki problem zmusił sieciowe organizacje do puszukiwania nowych sposobów monitorowania ruchu w sieci. Jednym z 
+Znaczny wzrost sieci Internet bezpośrednio wpływa na znaczny wzrost ruchu sieciowego. Z pojawieniem się takiego typu aplikacji
+jak aplikacje internetowe, wideo w czasie rzeczywistym, telefonia IP i wiele innych, ruch sieciowy stawał się bardziej 
+obciążony. Standardowe protokoły stosu TCP/IP nie oferują gwarantowanej przepustowości lub minimalnego czasu opóźnienia 
+pakietów. Taki problem zmusił sieciowe organizacje do pszukiwania nowych sposobów monitorowania ruchu w sieci. Jednym z 
 takich rozwiązań stała się technologia "usług zintegrowanych" (Integrated services) od grupy roboczej IETF, zdefiniowana w 
 1997 w standardzie [RFC 1633](https://tools.ietf.org/html/rfc1633).
 
@@ -31,9 +31,9 @@ można zdefiniować odmienne wartości parametrów QoS. Ponadto strumienie danyc
 ### Usługi modelu IntServ <a name="uslugi_modelu_intserv"></a>
 W modelu usług zintegrowanych (Intserv) zdefiniowano dwie usługi:
 
-* **Usługa gwarantowana** (ang. guaranteed service) [RFC 2212](https://tools.ietf.org/html/rfc2212). może być stosowana do obsługi aplikacji wymagających ograniczonego czasu dostarczenia. Dla tego typu aplikacji, dane dostarczane do aplikacji po przekroczeniu predefiniowanej jednostki czasu są bezwartościowe. Dlatego też usługa gwarantowana przeznaczona jest do utrzymania określonej wartości opóźnienia w dostarczaniu pakietów end-to-end (od końca do końca) dla strumienia. Jest to osiągane dzięki sterowaniu opóźnieniami kolejkowania w elementach sieciowych wzdłuż ścieżki strumienia danych. Usługa gwarantowana nie wprowadza jednak ograniczeń w jitterze (czyli czasie pomiędzy kolejnymi przychodzącymi pakietami).
+* **Usługa gwarantowana** (ang. guaranteed service) [RFC 2212](https://tools.ietf.org/html/rfc2212) może być stosowana do obsługi aplikacji wymagających ograniczonego czasu dostarczenia. Dla tego typu aplikacji, dane dostarczane do aplikacji po przekroczeniu predefiniowanej jednostki czasu są bezwartościowe. Dlatego też usługa gwarantowana przeznaczona jest do utrzymania określonej wartości opóźnienia w dostarczaniu pakietów end-to-end (od końca do końca) dla strumienia. Jest to osiągane dzięki sterowaniu opóźnieniami kolejkowania w elementach sieciowych wzdłuż ścieżki strumienia danych. Usługa gwarantowana nie wprowadza jednak ograniczeń w jitterze (czyli czasie pomiędzy kolejnymi przychodzącymi pakietami).
 
-* **Usługa sterowanego obciążenia** (ang. controlled-load service) [RFC 2211](https://tools.ietf.org/html/rfc2211) może być stosowana dla aplikacji adaptacyjnych, które mogą tolerować pewne opóźnienia, ale są wrażliwe na stany przeciążenia ruchem. Tego typu aplikacje działają efektywnie wtedy, gdy sieć jest lekko obciążona, natomiast wydajność maleje drastycznie w stanie mocnego obciążenia sieci. Dlatego też, controlled-load service został zaprojektowany do wprowadzenia w przybliżeniu takiej samej usługi jak usługa best-effort w lekko obciążonej sieci bez względu na aktualny stan sieci. Usługa ta jest opisywana jakościowo jako ta, gdzie brak jest określonych wartości opóźnienia i strat.
+* **Usługa sterowanego obciążenia** (ang. controlled-load service) [RFC 2211](https://tools.ietf.org/html/rfc2211) może być stosowana dla aplikacji adaptacyjnych, które mogą tolerować pewne opóźnienia, ale są wrażliwe na stany przeciążenia ruchem. Tego typu aplikacje działają efektywnie wtedy, gdy sieć jest lekko obciążona, natomiast wydajność maleje drastycznie w stanie mocnego obciążenia sieci. Dlatego też controlled-load service został zaprojektowany do wprowadzenia w przybliżeniu takiej samej usługi jak usługa best-effort w lekko obciążonej sieci bez względu na aktualny stan sieci. Usługa ta jest opisywana jakościowo jako ta, gdzie brak jest określonych wartości opóźnienia i strat.
 
 Każdy węzeł sieci zgodny z modelem IntServ powinien mieć zaimplementowane wymienione poniżej następujące mechanizmy sterowania ruchem:
 
@@ -59,13 +59,13 @@ W tym przypadku jest wysyłana wiadomość typu "**PATH**" (w której są zawart
 
 Wiadomość RESV jest przenoszona do węzła źródłowego (wysyłającego) w kierunku przeciwnym wzdłuż ścieżki, którą przebyła wiadomość PATH. Każdy router pośredniczący wzdłuż ścieżki może odrzucić lub zaakceptować żądaną rezerwację w wiadomości RESV. Jeśli rezerwacja zostanie odrzucona, to router odrzucający wysyła wiadomość o błędzie do odbiorcy i proces sygnalizacyjny zostaje przerwany. Jeśli żądanie zostanie zaakceptowane, to pasmo łącza i odpowiednia wielkość buforu zostanie przydzielona potokowi oraz związana ze stanem potoku informacja jest instalowana w routerach.
 
-Protokól RSVP jest jednokierunkowym, więc w przypadku połączenie dwukierunkowego (np. wideo konferencja) żądanie na rezerwacje jest wysyłane z obu hostów.
+Protokół RSVP jest jednokierunkowym, więc w przypadku połączenie dwukierunkowego (np. wideo konferencja) żądanie na rezerwacje jest wysyłane z obu hostów.
 
 ### Współpraca modeli IntServ i DiffServ <a name="wspolpraca"></a>
 Model usług zintegrowanych IntServ oraz model usług zróżnicowanych DiffServ są technikami wzajemnie się uzupełniającymi. Można je stosować w różnych obszarach sieci.
 * Protokół sygnalizacyjny RSVP, opracowany dla modelu IntServ, pozwala zapewniać żądaną jakość obsługi pojedynczym strumieniom danych w relacji od końca do końca. Nie może on być jednak stosowany w dużych sieciach ze względu na omówione wcześniej problemy skalowalności.
 * Model DiffServ, dzięki ograniczeniu liczby klas usług oraz rezygnacji z protokołu sygnalizacyjnego, nie ma problemów ze skalowalnością i dobrze nadaje się do stosowania w dużych sieciach. Nie zapewnia jednak pełnego rozróżnienia pakietów pochodzących z różnych aplikacji, uniemożliwia to pełne ilościowe zagwarantowanie parametrów transmisji dla poszczególnych strumieni ruchu.
-Korzystając z najważniejszych zalet modeli IntServ i DiffServ opracowano podstawowe zasady ich współpracy. Zakłada się, że model IntServ będzie stosowany w obszarze sieci dostępowej, obsługującej stosunkowo niewielką liczbę użytkowników, a zatem umiarkowaną liczbę pojedynczych strumieni danych wymagających rezerwacji zasobów sieciowych. Z kolei model DiffServ, obsługujący ruch zagregowany, będzie stosowany w sieciach szkieletowych jako element pośredniczący w zapewnieniu jakości usług w relacji od końca do końca.
+Korzystając z najważniejszych zalet modeli IntServ i DiffServ opracowano podstawowe zasady ich współpracy. Zakłada się, że model IntServ będzie stosowany w obszarze sieci dostępowej, obsługującej stosunkowo niewielką liczbę użytkowników, a zatem umiarkowaną liczbę pojedynczych strumieni danych wymagających rezerwacji zasobów sieciowych. Z kolei model DiffServ, obsługujący ruch z agregowany, będzie stosowany w sieciach szkieletowych jako element pośredniczący w zapewnieniu jakości usług w relacji od końca do końca.
 ---
 ### Źródła <a name="zrodla"></a>
 
