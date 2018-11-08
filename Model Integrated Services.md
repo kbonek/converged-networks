@@ -1,6 +1,6 @@
 Model Integrated Services
 ===
-Spis treści:
+Spis treści
 1. [Wprowadzenie](#wprowadzenie)
 2. [Usługi zintegrowane](#uslugi_zintegrowane)
 3. [Usługi modelu IntServ](#uslugi_modelu_intserv)
@@ -8,7 +8,7 @@ Spis treści:
 5. [Współpraca modeli IntServ i DiffServ](#wspolpraca)
 6. [Źródła](#zrodla)
 ---
-### Wprowadzenie: <a name="wprowadzenie"></a>
+### Wprowadzenie <a name="wprowadzenie"></a>
 Znaczny wzrost sieci Internet bezpośrednio wpływa na znaczny wzrost ruchu sieciowego. Z pojawieniem się takiego typu aplikacji
 jak aplikacje internetowe, wideo w czasie rzeczywistym, telefonia IP i wiele innych, ruch sieciowy stawał się bardziej 
 obciążony. Standardowe protokoły stosu TCP/IP nie oferują gwarantowanej przepustowości lub minimalnego czasu opóźnienia 
@@ -48,12 +48,12 @@ Każdy węzeł sieci zgodny z modelem IntServ powinien mieć zaimplementowane wy
 ### Protokół RSVP <a name="protokol_rsvp"></a>
 
 Jak już wspomniano wcześniej, model Intserv jest oparty o protokół rezerwacji RSVP ([RFC 2205](https://tools.ietf.org/html/rfc2205), [RFC 2210](https://tools.ietf.org/html/rfc2210)), który umożliwia realizację żądania przez daną aplikację, wymagającą rezerwacji zasobów w sieci. Na Rys.1 jest pokazano jak server **(S1)** chcąc przesłać dane do komputera **(PC1)**, rezerwuje ścieżkę do przekazania danych.
-![alt text](https://github.com/Bit-Kit/converged-networks/blob/master/IntServ/path.png "Rys.1 Komunikat PATH")
+![alt text](IntServ/path.png "Rys.1 Komunikat PATH")
 
 *Rys.1*
 
 W tym przypadku jest wysyłana wiadomość typu "**PATH**" (w której są zawarte wymagania do jakości strumienia) przez wszystkie routery po drodze do klienta docelowego, na co w odpowiedź klient generuje komunikat typu "**RESV**" Rys.2. 
-![alt text](https://github.com/Bit-Kit/converged-networks/blob/master/IntServ/resv.png "Rys.2 Komunikat RESV")
+![alt text](IntServ/resv.png "Rys.2 Komunikat RESV")
 
 *Rys.2*
 
