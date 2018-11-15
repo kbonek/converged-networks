@@ -50,6 +50,8 @@ Protokół SCSI wyróżnia urządzenie inicjujące jako źródło transakcji i u
 
 ## Źródła
 [Źródło 1](https://www.pcworld.pl/news/Podstawy-SCSI,305377.html)
+
 [Źródło 2](https://prezi.com/yeedic7mzp1h/temat-rownolega-magistrala-danych-scsi/)
+
 [Źródło 3](http://kaleron.pl/Standard-SCSI.php)
 
