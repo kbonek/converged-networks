@@ -30,4 +30,12 @@ SCSI występuje w różnych wersjach, które różnią się prędkością i odle
 *	Różne prędkości transmisji od 5 Mb/s do 640 Mb/s
 *	Szerokość magistrali 8 bitów i 16 bitów
 
+NAZWA | BITY | MAX.TRANSF | MAX.DŁ.KABLA | PARAMETRY ELEKTRYCZNE
+
+------------- | ------------- | ------------ | ------------- | ------------
+
+
+
+
+
 
