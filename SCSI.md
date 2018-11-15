@@ -14,10 +14,13 @@ Każde urządzenie, które jest podłączone do SCSI posiada swój unikatowy w o
 * Dziś jeszcze obowiązują normy międzynarodowe ISO/IEC 9316:1995, 2nd Edition (znana jako SCSI-2) oraz ISO 9316:1989, 1st Edition, znana jako SCSI-1. Aktualne są specyfikacje elektryczne SPI-3 i SPI-5 oraz przynależne warianty protokołów (zob. również specyfikacje SCSI).
 ## Rodzaje SCSI
 SCSI występuje w różnych wersjach, które różnią się prędkością i odległością na jakiej może być prowadzona transmisja.
+
  **SCSI – 1:**  Najstarsza specyfikacja opracowana w 1996 r. Pozwalała na transfer z prędkością 5 MB/s na odległość 6m. 
+ 
  **SCSI – 2:** Zwiększono liczbę urządzeń którą można podłączyć do 15 . Pojawiło się kolejkowanie poleceń pozwalając urządzeniom na przechowywanie u ustalanie priorytetów poleceń z komputera hosta. Zwiększono transfer w dwóch wersjach : 
 * Szybkie SCSI (Fast SCSI) – 10 MB/s 
 * Szybkie szerokie SCSI (Wide SCSI) – 20MB\s
+
  **SCSI – 3:** (Znana jako Ultra SCSI): 
 * Fast 20- prędkość transferu od 20 Mb/s
 * Ultra szerokie SCSI prędkość do 40 MB/s 
