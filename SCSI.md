@@ -30,12 +30,26 @@ SCSI występuje w różnych wersjach, które różnią się prędkością i odle
 *	Różne prędkości transmisji od 5 Mb/s do 640 Mb/s
 *	Szerokość magistrali 8 bitów i 16 bitów
 
-NAZWA | BITY | MAX.TRANSF | MAX.DŁ.KABLA | PARAMETRY ELEKTRYCZNE
 
-------------- | ------------- | ------------ | ------------- | ------------
+| NAZWA   | BITY  | MAX.TRANSF  | MAX.DŁ.KABLA  | PARAMETRY ELEKTRYCZNE  |
+|---|---|---|---|---|
+| SCSI - 1  | 8 | 5 Mb/s | 6m | SE |
+| SCSI - 2 Fast | 8 | 10Mb/s | 3m | SE |
+| SCSI - 2 Fast Wide | 16 | 20Mb/s | 3m | SE |
+| SCSI - 3 Ultra | 8 | 20Mb/s | 1.5m | SE |
+| SCSI - 3 Ultra Wide | 16 | 40Mb/s | 1.5m | SE |
+| SCSI - 3 Ultra 2 | 8 | 40Mb/s | 12m | LVD |
+| SCSI - 3 Ultra 2 Wide | 16 | 80Mb/s | 12m | LVD |
+| SCSI - 3 Ultra 3 | 16 | 160Mb/s | 12m | LVD |
+| SCSI - 3 Ultra 4 | 16 | 320Mb/s | 12m | LVD |
+| SCSI - 3 Ultra 640 | 16 | 640Mb/s | 12m | LVD |
 
+## Protokół
 
+Protokół SCSI wyróżnia urządzenie inicjujące jako źródło transakcji i urządzenie docelowe jako jej cel. Urządzenie docelowe może składać z więcej niż jednej jednostki logicznej, LUN. Jeżeli nie zostało to inaczej określone, transakcja kierowana jest do jednostki logicznej o najniższym adresie - LUN 0. Jednostką logiczną LUN może być partycja twardego dysku, pojedynczy dysk w macierzy lub inne jednostki logiczne.  SCSI natychmiast po zainicjowaniu akcji cała aktywność na magistrali przechodzi na urządzenie peryferyjne W innych systemach jest z reguły jedno urządzenie nadrzędne i wiele urządzeń podrzędnych, a całością transmisji rządzi komputer lub karta urządzenia nadrzędnego.
 
-
-
+## Źródła
+[Źródło 1](https://www.pcworld.pl/news/Podstawy-SCSI,305377.html)
+[Źródło 2](https://prezi.com/yeedic7mzp1h/temat-rownolega-magistrala-danych-scsi/)
+[Źródło 3](http://kaleron.pl/Standard-SCSI.php)
 
