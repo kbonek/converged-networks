@@ -1,4 +1,4 @@
-**Wykonał: Yehor Ihnatenko**
+
 ## Opis
 
 **SAN ( Storage Area Network )** — stanowi rozwiązanie architektoniczne dla podłączenia zewnętrznych urządzeń pamięci masowej, takich jak macierze dyskowe, biblioteki taśmowe, napędy optyczne do serwerów w taki sposób, aby system operacyjny rozpoznaje podłączone zasoby lokalne.
