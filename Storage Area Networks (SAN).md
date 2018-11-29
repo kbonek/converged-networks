@@ -3,14 +3,13 @@
 
 **SAN ( Storage Area Network )** — stanowi rozwiązanie architektoniczne dla podłączenia zewnętrznych urządzeń pamięci masowej, takich jak macierze dyskowe, biblioteki taśmowe, napędy optyczne do serwerów w taki sposób, aby system operacyjny rozpoznaje podłączone zasoby lokalne. SAN charakteryzują się świadczeniem tzw. sieciowych urządzeń blokowych (zwykle za pośrednictwem protokołów Fibre Channel, iSCSI lub AoE), podczas gdy sieci hurtowni danych (ang. Network Attached Storage, NAS) ukierunkowane na zapewnienie dostępu do przechowywanych na ich systemie plików danych za pomocą sieciowego systemu plików (NFS, SMB/CIFS, lub Apple Filing Protocol). Należy zwrócić uwagę, że kategoryczne rozdzielenie rodzaju "SAN — to tylko dyski sieciowe NAS — to tylko sieciowy system plików" jest sztucznym: wraz z pojawieniem się iSCSI zaczęło się wzajemne przenikanie technologii w celu zwiększenia elastyczności i ułatwienia ich stosowania. Na przykład, w 2003 roku NetApp już udzielały iSCSI na swoich NAS, a EMC i HDS — wręcz przeciwnie, chciano NAS-bramy do swoich SAN-tablic.
 
-Żródło: https://en.wikipedia.org/wiki/Storage_area_network
 
 ## Typy siec
 
 Większość sieci pamięci masowej wykorzystuje protokół SCSI do komunikacji między serwerami i urządzeniami pamięci masowej na poziomie topologii magistrali . Ponieważ protokół SCSI nie jest przeznaczony do tworzenia pakietów sieciowych, protokoły niskiego poziomu są używane w sieciach pamięci masowej:
 
-- Protokół Fibre Channel (FCP), transport SCSI przez Fibre Channel . Najczęściej używany protokół w tej chwili. Występuje w wersjach 1 -- Gbit / s, 2 Gbit / s, 4 Gbit / s, 8 Gbit / s, 10 Gbit / s, 16 Gbit / s, 20 Gbit / s.
-- iSCSI , transport SCSI przez TCP / IP .
+- [Protokół Fibre Channel](https://pl.wikipedia.org/wiki/Fibre_Channel/), transport SCSI przez Fibre Channel . Najczęściej używany protokół w tej chwili. Występuje w wersjach 1 -- Gbit / s, 2 Gbit / s, 4 Gbit / s, 8 Gbit / s, 10 Gbit / s, 16 Gbit / s, 20 Gbit / s.
+- [iSCSI](https://pl.wikipedia.org/wiki/ISCSI/), transport SCSI przez [TCP / IP](https://pl.wikipedia.org/wiki/Model_TCP/IP/)  .
 - iSER , transport iSCSI za pośrednictwem InfiniBand / RDMA .
 - SRP , transport SCSI przez InfiniBand / RDMA
 - FCoE , FCP / SCSI transport przez "czysty" Ethernet.
@@ -19,53 +18,60 @@ Większość sieci pamięci masowej wykorzystuje protokół SCSI do komunikacji 
 - Transport FICON przez Fibre Channel (używany tylko przez mainframe ).
 - ATA przez Ethernet , ATA - transport przez Ethernet .
 
-## Wspólne korzystanie z urządzeń pamięci masowej
+## Udostępnianie urządzeń pamięci masowej
 
-Siłą napędową dla rozwoju sieci pamięci masowej stał się gwałtowny wzrost ilości informacji biznesowych (takich jak e-mail, bazy danych i szczególnie wysoko obciążone serwery plików), które wymagają szybkiego dostępu do obudów urządzeń na poziomie blokowym. Wcześniej w zakładzie powstawały "wyspy" o wysokiej wydajności macierzy dyskowych SCSI. Każda taka tablica została przydzielona do konkretnej aplikacji i widać jak mu pewną ilość "wirtualnych dysków twardych" (LUN'ów).
-Sieć pamięci masowej pozwala połączyć te "wyspy" środkami szybki sieci. Również bez użycia technologii SCSI transportu nie da się zorganizować odporne klastry, w których jeden serwer łączy się z dwoma i więcej obudów tablic, znajdujących się w dużej odległości od siebie, na wypadek klęsk żywiołowych.
-Sieci pamięci masowej pomagają zwiększyć efektywność wykorzystania zasobów pamięci masowej, ponieważ dają możliwość zaznaczyć dowolny zasób każdego węzła sieci.
-Nie należy zapominać o urządzeniach do tworzenia kopii zapasowych, które również łączą się z SAN. W tej chwili istnieją jako przemysłowe, biblioteki taśmowe (na kilka tysięcy taśm) od wiodących marek, jak i low-end rozwiązania dla małych firm. Sieci pamięci masowych umożliwia podłączenie do jednego hosta kilku napędów takich bibliotek, zapewniając w ten sposób repozytorium danych do tworzenia kopii zapasowej od setek terabajtów do wielu petabajtów.
+Siłą napędową rozwoju sieci pamięciowych był gwałtowny rozwój informacji biznesowych (takich jak poczta e-mail , bazy danych i serwery plików o dużym obciążeniu), wymagających szybkiego dostępu do urządzeń dyskowych na poziomie bloku. Wcześniej przedsiębiorstwo posiadało "wyspy" wysokowydajnych macierzy dyskowych SCSI . Każda taka tablica została przydzielona dla konkretnej aplikacji i jest widoczna jako liczba "wirtualnych dysków twardych " ( LUN ).
+
+Pamięć sieciowa pozwala łączyć te "wyspy" z szybką siecią. Ponadto, bez użycia technologii transportu SCSI, niemożliwe jest zorganizowanie klastrów odpornych na uszkodzenia, w których jeden serwer łączy się z dwoma lub więcej macierzami dyskowymi znajdującymi się w dużej odległości od siebie w przypadku klęsk żywiołowych.
+
+Sieci pamięci masowej pomagają poprawić efektywność wykorzystania zasobów w systemach pamięci masowej, ponieważ zapewniają możliwość przydzielenia dowolnego zasobu do dowolnego węzła sieciowego.
+
+Nie zapomnij o urządzeniach do tworzenia kopii zapasowych, które są również podłączone do sieci SAN. W chwili obecnej istnieją zarówno przemysłowe biblioteki taśmowe (na kilka tysięcy taśm) od wiodących marek, jak i low-endowe rozwiązania dla małych firm. Sieci pamięci masowych pozwalają na podłączenie kilku dysków takich bibliotek do jednego hosta, zapewniając w ten sposób przechowywanie danych dla kopii zapasowych od setek terabajtów do kilku petabajtów.
 
 ## Porównanie technologii wymiany danych
+Czasami porównują SAN i NAS , mówiąc w rzeczywistości o różnicy między dyskiem sieciowym i systemem plików sieciowych - kto służy systemowi plików, który przechowuje dane .
 
-Czasami porównują SAN i NAS, mówiąc właściwie o różnicy między dyskiem sieciowym i sieciowy PS — która polega na tym, kto obsługuje system plików, widget, który przechowuje dane.
-W przypadku dysku sieciowego (również "urządzenia blokowego", ang. block device):
-- komunikacja z nim w sieci odbywa się blokami podobnie, jak i z lokalnym SCSI lub SATA-dysk;
-- system plików, jeśli jest potrzebna, tworzony i zarządzany przez klienta i zazwyczaj służy im jeden.
+W przypadku dysku sieciowego (również "urządzenie blokowe", ang. block device ):
 
-W przypadku sieciowego systemu plików ("zasobów z łącznym/rozdzielonym dostępem" — nie przechowuje, a tylko przekazuje dane):
-- komunikacja w sieci odbywa się z zastosowaniem bardziej endowych pojęć "plik" i "katalog", odpowiednich obiektów podlegających "prawdziwej" FS na dyskach fizycznych (lub logicznych na nich w przypadku stosowania RAID, LVM);
-- ten system jest tworzony i obsługiwany w ramach systemu zdalnego, przy tym może jednocześnie służyć do odczytu i zapisu wielu klientów.
+- wymiana danych z nią w sieci odbywa się w blokach, tak jak w przypadku lokalnego dysku SCSI lub [SATA](https://pl.wikipedia.org/wiki/Serial_ATA/) ;
+- system plików, jeśli jest potrzebny, jest tworzony i zarządzany przez klienta i z reguły jest przez niego używany.
+W przypadku sieciowego systemu plików ("shared / shared access" - nie przechowuje, ale tylko przesyła dane):
 
-![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/1.png)
+- dane są wymieniane za pośrednictwem sieci, wykorzystując koncepcje " plików " i " katalogów wyższego poziomu" odpowiadające obiektom "prawdziwego" FS na dyskach fizycznych (lub logiczne w przypadku RAID , LVM );
+- Ten system plików jest tworzony i utrzymywany w systemie zdalnym i może być jednocześnie używany do odczytu i zapisu przez wielu klientów.
+
+![alt text]https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%200.png)
 
 ## Topologia sieci
 
 ### Struktura pojedynczego przełącznika
-**Struktura pojedynczego przełącznika (ang.Single-Switch Fabric)** - składa się z jednego przełącznika Fibre Channel, serwerów i systemów pamięci masowej. Zazwyczaj ta topologia jest bazową dla wszystkich standardowych rozwiązań.
+**Struktura pojedynczego przełącznika (ang.Single-Switch Fabric)** - składa się z serwera i systemu pamięci Fibre Channel . Zazwyczaj ta topologia jest podstawowa dla wszystkich standardowych rozwiązań - inne topologie są tworzone poprzez łączenie jednoprzyciskowych komórek.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/1.jpg)
 
-### Drzewo lub Kaskadowego struktura
+### Struktura drzewa lub kaskady 
+**Struktura kaskadowa ( ang. Cascade fabric )** - zestaw komórek, których przełączniki są połączone z drzewem za pomocą połączeń między przełącznikami **( ang. Inter-Switch link, ISL )**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" ( główny przełącznik - **principal switch**) i przypisują status **"upstream"** (w górę) lub **"downstream"** (w dół) do numerów ISL, w zależności od tego, czy to łącze prowadzi do głównego przełącznika lub na peryferie.
 
-**Kaskadowy struktura (ang. cascaded fabric)** — zestaw komórek, przełączniki których łączą w drzewo z pomocą między zmianami połączeń **(ang. Inter-Switch link, ISL)**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" **(ang. principal switch, główny przełącznik)** i przeznaczają ISL'am status "upstream" (w górę) lub "downstream" (w dół) w zależności od tego, czy prowadzi ten link w stronę głównego switcha lub na peryferie.
+![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%201.png)
 
-![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/2.jpg)
+### Krata 
 
-### Pierścień
+**Krata** (ang. meshed fabric) - zestaw komórek, z których każdy jest połączony ze wszystkimi innymi. Jeśli jedna (i wiele kombinacji - i więcej) połączeń ISL nie, połączenie z siecią nie zostanie zerwane. Wadą jest duża redundancja połączeń.
 
-**Pierścień (ang. ring fabric)** — praktycznie powtarza schemat topologii kraty. Wśród zalet — wykorzystanie mniejszej ilości połączeń ISL
+![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%202.png)
 
-![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/4.jpg)
+### Ring
 
-### Europy środkowo-rozproszona
+**Ring** ( ang. born ring fabric ) - praktycznie powtarza schemat topologii siatki . Korzyści obejmują mniej połączeń ISL
 
-**Europy środkowo-rozproszona topologia (ang. core-edge fabric)** — praktycznie powtarza schemat topologii kraty. Wśród zalet — mniejsza nadmiarowość połączeń i wysoki stopień odporności na uszkodzenia.
+![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%203.png)
 
-![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/5.png)
+### Centralnie rozprowadzane
+**Centralnie rozproszona topologia** ( ang. core-edge fabric ) - praktycznie powtarza schemat topologii sieci . Korzyści obejmują mniejszą nadmiarowość połączeń i wysoki stopień odporności na uszkodzenia
+![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%204.png)
 
-## Wydajność
-Pojawienie się nowych zaawansowanych technologicznie materiałów przyczynia się do wzrostu wydajności sieci opartych na technologii Fibre Channel i Ethernet. Już istnieją przełączniki obsługujące prędkość transmisji 10Gbit/s. Służy do tego nowy typ radia — XFP, a także światłowód w standardzie ОМ3. Przyrost prędkości transmisji przyczynia się i to, że przełączniki mogą zbierać na Inter Switch Link'ach trank gupy z kilku portów. Przełączniki "SilkWorm" od Brocade mogą zbierać trank z ośmiu linków. Tranków może być kilka, jeśli występuje taka potrzeba.
+## Produktywność 
+Pojawienie się nowych zaawansowanych technologicznie materiałów przyczynia się do wzrostu wydajności sieci opartych na technologii Fibre Channel i Ethernet. Już istnieją przełączniki obsługujące prędkość transmisji 10Gbit/s.
 
 Żródła:
 - https://en.wikipedia.org/wiki/Storage_area_network
