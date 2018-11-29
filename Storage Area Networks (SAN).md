@@ -1,23 +1,23 @@
 
 ## Opis
 
-**SAN ( Storage Area Network )** — stanowi rozwiązanie architektoniczne dla podłączenia zewnętrznych urządzeń pamięci masowej, takich jak macierze dyskowe, biblioteki taśmowe, napędy optyczne do serwerów w taki sposób, aby system operacyjny rozpoznaje podłączone zasoby lokalne.
-SAN charakteryzują się świadczeniem tzw. sieciowych urządzeń blokowych (zwykle za pośrednictwem protokołów Fibre Channel, iSCSI lub AoE), podczas gdy sieci hurtowni danych (ang. Network Attached Storage, NAS) ukierunkowane na zapewnienie dostępu do przechowywanych na ich systemie plików danych za pomocą sieciowego systemu plików (NFS, SMB/CIFS, lub Apple Filing Protocol).
-Należy zwrócić uwagę, że kategoryczne rozdzielenie rodzaju "SAN — to tylko dyski sieciowe NAS — to tylko sieciowy system plików" jest sztucznym: wraz z pojawieniem się iSCSI zaczęło się wzajemne przenikanie technologii w celu zwiększenia elastyczności i ułatwienia ich stosowania. Na przykład, w 2003 roku NetApp już udzielały iSCSI na swoich NAS, a EMC i HDS — wręcz przeciwnie, chciano NAS-bramy do swoich SAN-tablic.
+**SAN ( Storage Area Network )** — stanowi rozwiązanie architektoniczne dla podłączenia zewnętrznych urządzeń pamięci masowej, takich jak macierze dyskowe, biblioteki taśmowe, napędy optyczne do serwerów w taki sposób, aby system operacyjny rozpoznaje podłączone zasoby lokalne. SAN charakteryzują się świadczeniem tzw. sieciowych urządzeń blokowych (zwykle za pośrednictwem protokołów Fibre Channel, iSCSI lub AoE), podczas gdy sieci hurtowni danych (ang. Network Attached Storage, NAS) ukierunkowane na zapewnienie dostępu do przechowywanych na ich systemie plików danych za pomocą sieciowego systemu plików (NFS, SMB/CIFS, lub Apple Filing Protocol). Należy zwrócić uwagę, że kategoryczne rozdzielenie rodzaju "SAN — to tylko dyski sieciowe NAS — to tylko sieciowy system plików" jest sztucznym: wraz z pojawieniem się iSCSI zaczęło się wzajemne przenikanie technologii w celu zwiększenia elastyczności i ułatwienia ich stosowania. Na przykład, w 2003 roku NetApp już udzielały iSCSI na swoich NAS, a EMC i HDS — wręcz przeciwnie, chciano NAS-bramy do swoich SAN-tablic.
+
+Żródło: https://en.wikipedia.org/wiki/Storage_area_network
 
 ## Typy siec
 
-SAN-Switch Qlogic SANbox 5600 z podłączonymi do niego optyczne złączkami Fibre Channel.
-Większość sieci przechowywania danych wykorzystuje protokół SCSI do komunikacji między serwerami i urządzeniami do przechowywania danych na poziomie opon topologii. Tak jak protokół SCSI nie jest przeznaczony do tworzenia pakietów sieciowych w sieciach przechowywania danych są używane protokoły niskiego poziomu:
-- Fibre Channel Protocol (FCP), transport SCSI przez Fibre Channel. Najczęściej stosowany obecnie protokół. Istnieje w wersjach 1 Gbit/s, 2 Gbit/s, 4 Gbit/s, 8 Gbit/s, 10 Gbit/s, 16 Gbit/s, 20 Gbit/s.
-- iSCSI, transport SCSI przez TCP/IP.
-- iSER, transport iSCSI przez InfiniBand / RDMA.
-- SRP, transport SCSI przez InfiniBand / RDMA
-- FCoE, transport FCP/SCSI na "czystego" Ethernet.
-- FCIP i iFCP, hermetyzacja i wysyłanie FCP/SCSI w pakietach IP.
-- HyperSCSI, transport SCSI przez Ethernet.
-- FICON transport przez Fibre Channel
-- ATA over Ethernet, transport ATA za pośrednictwem sieci Ethernet.
+Większość sieci pamięci masowej wykorzystuje protokół SCSI do komunikacji między serwerami i urządzeniami pamięci masowej na poziomie topologii magistrali . Ponieważ protokół SCSI nie jest przeznaczony do tworzenia pakietów sieciowych, protokoły niskiego poziomu są używane w sieciach pamięci masowej:
+
+- Protokół Fibre Channel (FCP), transport SCSI przez Fibre Channel . Najczęściej używany protokół w tej chwili. Występuje w wersjach 1 -- Gbit / s, 2 Gbit / s, 4 Gbit / s, 8 Gbit / s, 10 Gbit / s, 16 Gbit / s, 20 Gbit / s.
+- iSCSI , transport SCSI przez TCP / IP .
+- iSER , transport iSCSI za pośrednictwem InfiniBand / RDMA .
+- SRP , transport SCSI przez InfiniBand / RDMA
+- FCoE , FCP / SCSI transport przez "czysty" Ethernet.
+- FCIP i iFCP , FCP / SCSI hermetyzacja i transmisja w pakietach IP.
+- HyperSCSI , transport SCSI przez Ethernet .
+- Transport FICON przez Fibre Channel (używany tylko przez mainframe ).
+- ATA przez Ethernet , ATA - transport przez Ethernet .
 
 ## Wspólne korzystanie z urządzeń pamięci masowej
 
