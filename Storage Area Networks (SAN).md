@@ -31,7 +31,7 @@ Nie zapomnij o urządzeniach do tworzenia kopii zapasowych, które są również
 ## Porównanie technologii wymiany danych
 Czasami porównują SAN i NAS , mówiąc w rzeczywistości o różnicy między dyskiem sieciowym i systemem plików sieciowych - kto służy systemowi plików, który przechowuje dane .
 
-W przypadku dysku sieciowego (również "urządzenie blokowe", ang. block device ):
+W przypadku dysku sieciowego (również "urządzenie blokowe", ang. *block device* ):
 
 - wymiana danych z nią w sieci odbywa się w blokach, tak jak w przypadku lokalnego dysku SCSI lub [SATA](https://pl.wikipedia.org/wiki/Serial_ATA/) ;
 - system plików, jeśli jest potrzebny, jest tworzony i zarządzany przez klienta i z reguły jest przez niego używany.
@@ -45,29 +45,29 @@ W przypadku sieciowego systemu plików ("shared / shared access" - nie przechowu
 ## Topologia sieci
 
 ### Struktura pojedynczego przełącznika
-**Struktura pojedynczego przełącznika (ang.Single-Switch Fabric)** - składa się z serwera i systemu pamięci Fibre Channel . Zazwyczaj ta topologia jest podstawowa dla wszystkich standardowych rozwiązań - inne topologie są tworzone poprzez łączenie jednoprzyciskowych komórek.
+**Struktura pojedynczego przełącznika (*ang.Single-Switch Fabric*)** - składa się z serwera i systemu pamięci Fibre Channel . Zazwyczaj ta topologia jest podstawowa dla wszystkich standardowych rozwiązań - inne topologie są tworzone poprzez łączenie jednoprzyciskowych komórek.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%200.png)
 
 ### Struktura drzewa lub kaskady 
-**Struktura kaskadowa ( ang. Cascade fabric )** - zestaw komórek, których przełączniki są połączone z drzewem za pomocą połączeń między przełącznikami **( ang. Inter-Switch link, ISL )**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" ( główny przełącznik - **principal switch**) i przypisują status **"upstream"** (w górę) lub **"downstream"** (w dół) do numerów ISL, w zależności od tego, czy to łącze prowadzi do głównego przełącznika lub na peryferie.
+**Struktura kaskadowa (*ang.Cascade Fabric*)** - zestaw komórek, których przełączniki są połączone z drzewem za pomocą połączeń między przełącznikami **(*ang.Inter-Switch-Link, ISL*)**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" ( główny przełącznik - ***"principal switch"***) i przypisują status ***"upstream"*** (w górę) lub ***"downstream"*** (w dół) do numerów ISL, w zależności od tego, czy to łącze prowadzi do głównego przełącznika lub na peryferie.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%201.png)
 
 ### Krata 
 
-**Krata** (ang. meshed fabric) - zestaw komórek, z których każdy jest połączony ze wszystkimi innymi. Jeśli jedna (i wiele kombinacji - i więcej) połączeń ISL nie, połączenie z siecią nie zostanie zerwane. Wadą jest duża redundancja połączeń.
+**Krata** (*ang.Meshed Fabric*) - zestaw komórek, z których każdy jest połączony ze wszystkimi innymi. Jeśli jedna (i wiele kombinacji - i więcej) połączeń ISL nie, połączenie z siecią nie zostanie zerwane. Wadą jest duża redundancja połączeń.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%202.png)
 
 ### Ring
 
-**Ring** ( ang. born ring fabric ) - praktycznie powtarza schemat topologii siatki . Korzyści obejmują mniej połączeń ISL
+**Ring** (*ang.Born-Ring-Fabric*) - praktycznie powtarza schemat topologii siatki. Korzyści obejmują mniej połączeń ISL.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%203.png)
 
 ### Centralnie rozprowadzane
-**Centralnie rozproszona topologia** ( ang. core-edge fabric ) - praktycznie powtarza schemat topologii sieci . Korzyści obejmują mniejszą nadmiarowość połączeń i wysoki stopień odporności na uszkodzenia
+**Centralnie rozproszona topologia** (*ang.Core-Edge-Fabric*) - praktycznie powtarza schemat topologii sieci. Korzyści obejmują mniejszą nadmiarowość połączeń i wysoki stopień odporności na uszkodzenia.
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%204.png)
 
 ## Produktywność 
