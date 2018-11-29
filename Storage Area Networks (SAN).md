@@ -40,14 +40,14 @@ W przypadku sieciowego systemu plików ("shared / shared access" - nie przechowu
 - dane są wymieniane za pośrednictwem sieci, wykorzystując koncepcje " plików " i " katalogów wyższego poziomu" odpowiadające obiektom "prawdziwego" FS na dyskach fizycznych (lub logiczne w przypadku RAID , LVM );
 - Ten system plików jest tworzony i utrzymywany w systemie zdalnym i może być jednocześnie używany do odczytu i zapisu przez wielu klientów.
 
-![alt text]https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%200.png)
+![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/1.png)
 
 ## Topologia sieci
 
 ### Struktura pojedynczego przełącznika
 **Struktura pojedynczego przełącznika (ang.Single-Switch Fabric)** - składa się z serwera i systemu pamięci Fibre Channel . Zazwyczaj ta topologia jest podstawowa dla wszystkich standardowych rozwiązań - inne topologie są tworzone poprzez łączenie jednoprzyciskowych komórek.
 
-![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/1.jpg)
+![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%200.png)
 
 ### Struktura drzewa lub kaskady 
 **Struktura kaskadowa ( ang. Cascade fabric )** - zestaw komórek, których przełączniki są połączone z drzewem za pomocą połączeń między przełącznikami **( ang. Inter-Switch link, ISL )**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" ( główny przełącznik - **principal switch**) i przypisują status **"upstream"** (w górę) lub **"downstream"** (w dół) do numerów ISL, w zależności od tego, czy to łącze prowadzi do głównego przełącznika lub na peryferie.
