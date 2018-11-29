@@ -64,7 +64,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 ### Model Differentiated Services
 (Kinga Bik)
 
-### [SAN](Storage Area Networks.md)
+### [Storage Area Networks (SAN)](Storage Area Networks (SAN).md)
 (Yehor Ihnatenko)
 
 ### [Przykłady DSCP](PrzykladyDSCP.md)
