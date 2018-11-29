@@ -45,12 +45,12 @@ W przypadku sieciowego systemu plików ("shared / shared access" - nie przechowu
 ## Topologia sieci
 
 ### Struktura pojedynczego przełącznika
-**Struktura pojedynczego przełącznika (*ang.Single-Switch Fabric*)** - składa się z serwera i systemu pamięci Fibre Channel . Zazwyczaj ta topologia jest podstawowa dla wszystkich standardowych rozwiązań - inne topologie są tworzone poprzez łączenie jednoprzyciskowych komórek.
+**Struktura pojedynczego przełącznika** (*ang.Single-Switch Fabric*) - składa się z serwera i systemu pamięci Fibre Channel . Zazwyczaj ta topologia jest podstawowa dla wszystkich standardowych rozwiązań - inne topologie są tworzone poprzez łączenie jednoprzyciskowych komórek.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%200.png)
 
 ### Struktura drzewa lub kaskady 
-**Struktura kaskadowa (***ang.Cascade Fabric***)** - zestaw komórek, których przełączniki są połączone z drzewem za pomocą połączeń między przełącznikami **(*ang.Inter-Switch-Link, ISL*)**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" ( główny przełącznik - ***"principal switch"***) i przypisują status ***"upstream"*** (w górę) lub ***"downstream"*** (w dół) do numerów ISL, w zależności od tego, czy to łącze prowadzi do głównego przełącznika lub na peryferie.
+**Struktura kaskadowa** (*ang.Cascade Fabric*) - zestaw komórek, których przełączniki są połączone z drzewem za pomocą połączeń między przełącznikami **(*ang.Inter-Switch-Link, ISL*)**. Podczas inicjalizacji sieci przełączniki wybierają "wierzchołek drzewa" ( główny przełącznik - "principal switch") i przypisują status **"*upstream*"** (w górę) lub **"*downstream*"** (w dół) do numerów ISL, w zależności od tego, czy to łącze prowadzi do głównego przełącznika lub na peryferie.
 
 ![alt text](https://github.com/IhnatekoYehor/converged-networks/blob/master/SAN/Untitled%20Diagram%201.png)
 
