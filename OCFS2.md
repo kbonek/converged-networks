@@ -1,5 +1,5 @@
 ## OCFS 1
-Pierwsza wersja OCFS została wydana przez firmę Oracle dla systemu Linux-jądra w wersji 2.4. I choć wersja, wydany na wolnej licencji, miała pewne ograniczenia, ona pozwalała uzyskać bezpośredni dostęp do plików bazy danych, a także dawała szereg innych korzyści administratorom. Tak jak pierwsza wersja systemu została stworzona tylko dla klastra baz danych Oracle, nie była POSIX-zgodny, w przeciwieństwie do drugiej wersji OCFS.
+Pierwsza wersja OCFS została wydana przez firmę Oracle dla systemu Linux-jądra w wersji 2.4. I choć wersja, wydana na wolnej licencji, miała pewne ograniczenia, ona pozwalała uzyskać bezpośredni dostęp do plików bazy danych, a także dawała szereg innych korzyści administratorom. Tak jak pierwsza wersja systemu została stworzona tylko dla klastra baz danych Oracle, nie była POSIX-zgodny, w przeciwieństwie do drugiej wersji OCFS. [1]
 
 ## OCFS 2
 System OCFS została zastąpiona przez system OCFS2, w której dodano zgodność z POSIX, co znacznie poszerzyło zakres zastosowania systemu. Jedną z zalet OCFS2, oprócz zapewnienia zgodności z POSIX, polega na tym, że ona została zintegrowana w kernel 2.6.16. Znak "experimental" ("Eksperyment") została usunięta z systemu OCFS2 w wersji jądra 2.6.19.
@@ -9,7 +9,7 @@ System plików ma semantyka lokalnego systemu plików i nie wymaga żadnej specj
 
 W chwili obecnej system plików OCFS2 jest używany w produkcie firmy Oracle Real Application Cluster. Oprócz tego, często stosuje się przy budowaniu skalowalnych serwerów Www, serwerów plików, systemów pocztowych, a także do przechowywania obrazów maszyn wirtualnych.
 
-System działa na każdej magazynu, do którego dostęp może odbywać się za pomocą protokołów takich jak iSCSI, AoE lub DRBD.
+System działa na każdej magazynu, do którego dostęp może odbywać się za pomocą protokołów takich jak iSCSI, AoE lub DRBD. [2] 
 
 ## Możliwości systemu plików OCFS2
 
@@ -23,20 +23,22 @@ System działa na każdej magazynu, do którego dostęp może odbywać się za p
 
 ## Oprogramowanie
 
-mkfs.ocfs2 — utwórz system plików OCFS2;
-mount.ocfs2 — montuje system plików OCFS2;
-mounted.ocfs2 — znaleźć wszystkie systemy plików OCFS2 na tej witrynie;
-fsck.ocfs2 — sprawdzić integralność systemu plików OCFS2;
-o2cb — zatrzymanie, uruchomienie, konfiguracja klastra (stos OCFS2); zawiera je w swoim składzie wiele składników (o2nm, o2hb, o2net, o2dlm).
-ocfs2console — graficzny  interfejs do zarządzania OCFS2.
-Składniki o2cb:
+* mkfs.ocfs2 — utwórz system plików OCFS2;
+* mount.ocfs2 — montuje system plików OCFS2; 
+* mounted.ocfs2 — znaleźć wszystkie systemy plików OCFS2 na tej witrynie;
+* fsck.ocfs2 — sprawdzić integralność systemu plików OCFS2;
+* o2cb — zatrzymanie, uruchomienie, konfiguracja klastra (stos OCFS2); 
+* zawiera je w swoim składzie wiele składników (o2nm, o2hb, o2net, o2dlm).
+* ocfs2console — graficzny  interfejs do zarządzania OCFS2.
 
-o2nm — kierownik węzłów (node manager);
-o2hb — heratbeat agent;
-o2net — agent sieciowy;
-o2dlm — rozproszony kierownik blokad (distributed lock manager).
+## Składniki o2cb:
 
-Konfiguracja
+* o2nm — kierownik węzłów (node manager);
+* o2hb — heratbeat agent;
+* o2dlm — rozproszony kierownik blokad (distributed lock manager).
+[3]
+## Konfiguracja
+
 Plik konfiguracyjny:
 
 ```
@@ -99,11 +101,11 @@ Uruchomienie:
      
 Żródła:
 
-https://ru.wikipedia.org/wiki/OCFS
+1 https://ru.wikipedia.org/wiki/OCFS
 
-https://lwn.net/Articles/137278/
-
-https://ru.bmstu.wiki/OCFS_(Oracle_Cluster_File_System)
+2 https://ru.bmstu.wiki/OCFS_(Oracle_Cluster_File_System)
+ 
+3 https://lwn.net/Articles/137278/
 
 
 ANDRII CHABAN 
