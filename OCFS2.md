@@ -39,8 +39,10 @@ o2dlm — rozproszony kierownik blokad (distributed lock manager).
 Konfiguracja
 Plik konfiguracyjny:
 
+```
   /etc/ocfs2/cluster.conf
   /etc/sysconfig/o2cb
+```
  
  Przykład:
  
