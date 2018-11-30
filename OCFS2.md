@@ -1,7 +1,7 @@
-                                                               OCFS 1
+## OCFS 1
 Pierwsza wersja OCFS została wydana przez firmę Oracle dla systemu Linux-jądra w wersji 2.4. I choć wersja, wydany na wolnej licencji, miała pewne ograniczenia, ona pozwalała uzyskać bezpośredni dostęp do plików bazy danych, a także dawała szereg innych korzyści administratorom. Tak jak pierwsza wersja systemu została stworzona tylko dla klastra baz danych Oracle, nie była POSIX-zgodny, w przeciwieństwie do drugiej wersji OCFS.
 
-                                                               OCFS 2
+## OCFS 2
 System OCFS została zastąpiona przez system OCFS2, w której dodano zgodność z POSIX, co znacznie poszerzyło zakres zastosowania systemu. Jedną z zalet OCFS2, oprócz zapewnienia zgodności z POSIX, polega na tym, że ona została zintegrowana w kernel 2.6.16. Znak "experimental" ("Eksperyment") została usunięta z systemu OCFS2 w wersji jądra 2.6.19.
 
 Oracle Cluster Filesystem 2 (OCFS2) — system przeznaczony do podziału na dwa lub więcej Linux-systemy, jednocześnie pracującymi z jednym i tym samym rozdzielającym repozytorium (shared storage). Charakteryzuje się wysoką wydajnością i niezawodnością. Jest rozwijany przez firmę Oracle. Jest wolnym oprogramowaniem. 
@@ -11,17 +11,17 @@ W chwili obecnej system plików OCFS2 jest używany w produkcie firmy Oracle Rea
 
 System działa na każdej magazynu, do którego dostęp może odbywać się za pomocą protokołów takich jak iSCSI, AoE lub DRBD.
 
-                                                  Możliwości systemu plików OCFS2
+## Możliwości systemu plików OCFS2
 
-Bloki o zmiennym rozmiarze;
-Elastyczne przydzielanie przestrzeni (zakresy, rozrzędzony pliki, nieutrwalonych zakresów z możliwością tworzenia dziur);
-Logowanie (obsługiwane są tryby ordered i writeback);
-W systemach różnych platform sprzętowych działa tak samo (x86, x86_64, ia64 i ppc64);
-Obsługa wbudowanego Clusterstack z rozproszonym systemem kontroli blokad (Distributed Lock Manager);
-Wsparcie bezpośredniego, asynchroniczne, splice() wejścia/wyjścia, a także możliwość wyświetlania pamięci na system plików (Memory Mapped I/Os);
-Różnorodne narzędzia, które zapewniają kompleksowe wsparcie dla systemu plików.
+* Bloki o zmiennym rozmiarze;
+* Elastyczne przydzielanie przestrzeni (zakresy, rozrzędzony pliki, nieutrwalonych zakresów z możliwością tworzenia dziur);
+* Logowanie (obsługiwane są tryby ordered i writeback);
+* W systemach różnych platform sprzętowych działa tak samo (x86, x86_64, ia64 i ppc64);
+* Obsługa wbudowanego Clusterstack z rozproszonym systemem kontroli blokad (Distributed Lock Manager);
+* Wsparcie bezpośredniego, asynchroniczne, splice() wejścia/wyjścia, a także możliwość wyświetlania pamięci na system plików (Memory Mapped I/Os);
+* Różnorodne narzędzia, które zapewniają kompleksowe wsparcie dla systemu plików.
 
-                                                         Oprogramowanie
+## Oprogramowanie
 
 mkfs.ocfs2 — utwórz system plików OCFS2;
 mount.ocfs2 — montuje system plików OCFS2;
@@ -39,9 +39,8 @@ o2dlm — rozproszony kierownik blokad (distributed lock manager).
 Konfiguracja
 Plik konfiguracyjny:
 
-/etc/ocfs2/cluster.conf
-
- /etc/sysconfig/o2cb
+  /etc/ocfs2/cluster.conf
+  /etc/sysconfig/o2cb
  
  Przykład:
  
